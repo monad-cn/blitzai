@@ -1,12 +1,45 @@
-
-.partner{
- 
+.partner {
+  position: relative;
+  padding: 0 6rem;
 }
 
 .partnerArea {
   position: relative;
-  width: 100%; 
+  width: 100%;
   z-index: 2;
+}
+
+.hostRow {
+  position: relative;
+  left: -300px;
+  margin-top: 3rem;
+  z-index: 2;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hostGroup{
+  position: relative;
+  top: -40px;
+}
+
+.hostTag {
+  color: #d5c9fb;
+}
+
+.hostLabel {
+  color: #fff;
+  font-size: 12px;
+}
+
+.hostLogo {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: none;
 }
 
 .partnerCharacters {
@@ -24,27 +57,31 @@
 }
 
 .partnerCharacterLeft {
-  
   left: -8px;
   bottom: 12px;
+   width: 250px;
 }
 
 .partnerCharacterRight {
-  
   right: -8px;
   bottom: 12px;
+     width: 250px;
 }
 
 .partnerCharacterCenterLeft {
-
-    right:50%;
+  right: 50%;
+  top: 0;
+    transform: translateY(-100%);
   bottom: 200px;
 }
 
 .partnerCharacterCenterRight {
   width: 310px;
-    left:50%;
+  top: 0;
+  transform: translateY(-100%);
+  left: 50%;
   bottom: 200px;
+  
 }
 
 .partnerBlock {
@@ -78,7 +115,7 @@
 }
 
 .partnerLabel {
-  width:240px;
+  width: 240px;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -94,6 +131,12 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.partnerLogoImage {
+  height: auto;
+  /* height: 40px; */
+  object-fit: contain;
+  margin: 0 4px;
+}
 
 @media (max-width: 900px) {
   .hostRow {
@@ -120,5 +163,3 @@
     bottom: 96px;
   }
 }
-
- 

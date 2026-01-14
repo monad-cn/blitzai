@@ -176,8 +176,10 @@ export default function Home() {
         {/* 背景图片容器 - 使用 next/image */}
         <div className={styles.heroSectionContainer}>
           <HeroContainer />
-          <Partner />
         </div>
+      </section>
+      <section id="partner" className={styles.partnerContainer}>
+          <Partner />
       </section>
       {/* About Section */}
       <section id="about" className={styles.aboutSection}>
