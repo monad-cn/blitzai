@@ -20,7 +20,7 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.hostGroup{
+.hostGroup {
   position: relative;
   bottom: -40px;
 }
@@ -76,7 +76,7 @@
 .partnerCharacterCenterLeft {
   right: 50%;
   top: 0;
-    transform: translateY(-100%);
+  transform: translateY(-100%);
   bottom: 200px;
 }
 
@@ -86,7 +86,6 @@
   transform: translateY(-100%);
   left: 50%;
   bottom: 200px;
-  
 }
 
 .partnerBlock {
@@ -100,7 +99,7 @@
   background: rgba(8, 8, 12, 0.72);
   box-shadow: inset 0 0 0 1px rgba(120, 90, 255, 0.15);
   backdrop-filter: blur(8px);
-  padding: 2rem 0 2rem 8rem ;
+  padding: 2rem 0 2rem 8rem;
 }
 
 .partnerBlock::before {
@@ -117,6 +116,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding-left: 6rem;
 }
 
 .partnerLabel {
@@ -146,6 +146,10 @@
 @media (max-width: 1600px) {
   .partnerCharacter {
     width: clamp(84px, 12.6vw, 154px);
+  }
+
+  .partnerRow {
+    padding-left: 2rem;
   }
 
   .partnerCharacterLeft {
