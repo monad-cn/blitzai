@@ -26,7 +26,7 @@ export function Footer() {
                         <Link href="/" className={styles.logo}>
                             <div className={styles.logoIcon}>
                                 <Image
-                                    src="/logo.png"
+                                    src="/monad_logo.png"
                                     alt="MONAD Logo"
                                     width={48}
                                     height={48}

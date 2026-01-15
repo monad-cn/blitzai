@@ -467,82 +467,8 @@
 }
 
 /* Register Section */
-.registerSection {
-  padding: 8rem 0 0rem;
-}
-
-.registerHeader {
-  max-width: 56rem;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
-
-.registerTitle {
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 1.1;
-  color: white;
-  margin-bottom: 1.5rem;
-}
-
-.registerSubtitle {
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.registerGrid {
-  max-width: 72rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.registerCard {
-  padding: 2rem;
-  background: rgba(15, 10, 21, 0.6);
-  border-radius: 1.25rem;
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
-  backdrop-filter: blur(10px);
-}
-
-.registerLabel {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
-}
-
-.registerDate {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #c4b5fd;
-  margin-bottom: 0.5rem;
-}
-
-.registerDescription {
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
-}
-
-.registerNote {
-  margin-top: 3rem;
-  max-width: 56rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: 1rem;
-  border: 1px solid rgba(168, 85, 247, 0.3);
-}
-
-.registerNote p {
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.7;
-}
+ 
+ 
 
 /* Agenda Section */
 .agendaSection {
@@ -1082,6 +1008,20 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.agendaPlaceholder {
+  min-height: 120px;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px dashed rgba(168, 85, 247, 0.5);
+  background: rgba(15, 10, 21, 0.4);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .speakersList {

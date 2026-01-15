@@ -62,7 +62,7 @@
 }
 
 .partnerCharacterLeft {
-  left: -20px;
+  left: -10px;
   bottom: 0px;
   width: clamp(120px, 22vw, 230px);
 }
@@ -285,7 +285,7 @@
   }
 
   .partnerLogoImage {
-    width: clamp(40px, 5vw, 80px);
+    width: clamp(40px, 8vw, 140px);
   }
 
   .hostLogoImage {

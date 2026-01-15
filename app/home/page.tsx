@@ -3,7 +3,6 @@ import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 import { Button } from 'antd'
-import { Avatar } from 'antd'
 import styles from './page.module.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
@@ -40,98 +39,29 @@ export default function Home() {
 
   const agendaItems = [
     {
-      time: '09:00 - 09:30',
-      title: 'Registration & Check-in',
-      description:
-        'Welcome coffee, badge pickup, and networking with fellow hackers',
-      speakers: [
-        { name: 'Event Team', role: 'Organizers', avatar: '/event-team.jpg' }
-      ]
+      time: '10:00am',
+      title: 'Registration & On-site Hacking',
+      description: ''
     },
     {
-      time: '09:30 - 10:00',
-      title: 'Opening Ceremony',
-      description:
-        'Welcome address and introduction to Monad Blitz Pro hackathon',
-      speakers: [
-        {
-          name: 'Monad Core Team',
-          role: 'Founder',
-          avatar: '/monad-founder.jpg'
-        }
-      ]
+      time: '13:30pm',
+      title: 'Opening Remarks',
+      description: ''
     },
     {
-      time: '10:00 - 11:00',
-      title: 'Keynote: The Future of Agent Economy',
-      description:
-        'Deep dive into agent-native infrastructure and the next wave of blockchain innovation',
-      speakers: [
-        {
-          name: 'Dr. Sarah Chen',
-          role: 'AI Researcher',
-          avatar: '/speaker-1.jpg'
-        },
-        {
-          name: 'Alex Wang',
-          role: 'Blockchain Architect',
-          avatar: '/speaker-2.jpg'
-        }
-      ],
-      highlight: true
+      time: '14:00pm',
+      title: 'Panel 1 — Doubao, Zhipu, Monad',
+      description: ''
     },
     {
-      time: '11:00 - 12:00',
-      title: 'Track Introduction & Technical Workshops',
-      description: 'Overview of three tracks with hands-on technical guidance',
-      speakers: [
-        { name: 'Emily Zhang', role: 'Track 1 Lead', avatar: '/track-1.jpg' },
-        { name: 'Michael Liu', role: 'Track 2 Lead', avatar: '/track-2.jpg' },
-        { name: 'Jessica Kim', role: 'Track 3 Lead', avatar: '/track-3.jpg' }
-      ]
+      time: '14:45pm',
+      title: 'Panel 2 — SiliconFlow, 42 Chapters',
+      description: ''
     },
     {
-      time: '12:00 - 13:30',
-      title: 'Lunch & Networking',
-      description: 'Connect with mentors, investors, and fellow builders',
-      speakers: []
-    },
-    {
-      time: '13:30 - 15:00',
-      title: 'Panel Discussion: Building for the Agent Era',
-      description:
-        'Industry leaders discuss challenges and opportunities in agent-powered applications',
-      speakers: [
-        { name: 'David Park', role: 'CEO, AI Startup', avatar: '/ceo-1.jpg' },
-        {
-          name: 'Lisa Wang',
-          role: 'Partner, Vertex Capital',
-          avatar: '/investor-1.jpg'
-        },
-        { name: 'Tom Chen', role: 'CTO, Web3 Company', avatar: '/cto-1.jpg' }
-      ],
-      highlight: true
-    },
-    {
-      time: '15:00 - 17:00',
-      title: 'Team Formation & Ideation',
-      description:
-        'Find your co-founders and start brainstorming your winning idea',
-      speakers: [
-        {
-          name: 'Mentors',
-          role: 'Available for consultation',
-          avatar: '/mentors.jpg'
-        }
-      ]
-    },
-    {
-      time: '17:00 - 18:00',
-      title: 'Hacking Begins!',
-      description:
-        'Start building your project with full mentor and technical support',
-      speakers: [],
-      highlight: true
+      time: '15:30pm',
+      title: 'Lightning Pitches',
+      description: ''
     }
   ]
 
@@ -150,26 +80,12 @@ export default function Home() {
     ]
   }
 
-  const getAvatarProps = (name: string) => {
-    const initials = name
-      .split(' ')
-      .map(word => word[0])
-      .join('')
-      .toUpperCase()
-      .slice(0, 2)
-
-    const colors = ['#8b5cf6', '#ec4899', '#3b82f6', '#6366f1', '#8b5cf6']
-    const colorIndex = name.charCodeAt(0) % colors.length
-
-    return { initials, bgColor: colors[colorIndex] }
-  }
-
   return (
     <div className={styles.home}>
       {/* Navigation */}
       <Header />
       <section id="home" className={styles.heroSection}>
-        {/* 背景图片容器 - 使用 next/image */}
+        {/* Background image container - uses next/image */}
         <div className={styles.heroSectionContainer}>
           <HeroContainer />
         </div>
@@ -207,43 +123,7 @@ export default function Home() {
 
       {/* Register Section */}
       <section id="register" className={styles.registerSection}>
-        <div className={styles.container}>
-          <div className={styles.registerHeader}>
-            <h2 className={styles.registerTitle}>
-              Register <span className={styles.accent}>Timeline</span>
-            </h2>
-            <p className={styles.registerSubtitle}>
-              Online Phase + Offline Hacker Camp
-            </p>
-          </div>
-
-          <div className={styles.registerGrid}>
-            <div className={styles.registerCard}>
-              <div className={styles.registerLabel}>Online Phase</div>
-              <div className={styles.registerDate}>Jan 19 - Feb 28</div>
-              <p className={styles.registerDescription}>
-                Full-cycle technical mentoring and project incubation
-              </p>
-            </div>
-
-            <div className={styles.registerCard}>
-              <div className={styles.registerLabel}>Offline Hacker Camp</div>
-              <div className={styles.registerDate}>Beijing: Jan 31</div>
-              <div className={styles.registerDate}>Shenzhen: Feb 7</div>
-            </div>
-          </div>
-
-          <div className={styles.registerNote}>
-            <p>
-              The offline events bring together top mentors, technical experts,
-              and innovative teams. Through workshops, hands-on drills, and deep
-              exchanges, we explore the latest trends and real-world
-              applications of agent technology. The online phase provides
-              ongoing technical guidance and resources to support projects from
-              concept to launch.
-            </p>
-          </div>
-        </div>
+        
       </section>
 
       {/* Agenda Section */}
@@ -262,54 +142,19 @@ export default function Home() {
             {agendaItems.map((item, index) => (
               <div
                 key={index}
-                className={`${styles.agendaItem} ${
-                  item.highlight ? styles.highlight : ''
-                }`}
+                className={styles.agendaItem}
               >
                 <div className={styles.leftColumn}>
                   <div className={styles.timeLabel}>{item.time}</div>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
-                  <p className={styles.itemDescription}>{item.description}</p>
+                  {item.description ? (
+                    <p className={styles.itemDescription}>
+                      {item.description}
+                    </p>
+                  ) : null}
                 </div>
-
                 <div className={styles.rightColumn}>
-                  {item.speakers.length > 0 ? (
-                    <>
-                      <h4 className={styles.speakersLabel}>Speakers</h4>
-                      <div className={styles.speakersList}>
-                        {item.speakers.map((speaker, speakerIndex) => {
-                          const { initials, bgColor } = getAvatarProps(
-                            speaker.name
-                          )
-                          return (
-                            <div
-                              key={speakerIndex}
-                              className={styles.speakerCard}
-                            >
-                              <Avatar
-                                size={40}
-                                style={{ backgroundColor: bgColor }}
-                              >
-                                {initials}
-                              </Avatar>
-                              <div className={styles.speakerInfo}>
-                                <div className={styles.speakerName}>
-                                  {speaker.name}
-                                </div>
-                                <div className={styles.speakerRole}>
-                                  {speaker.role}
-                                </div>
-                              </div>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </>
-                  ) : (
-                    <div className={styles.openSession}>
-                      Open to all participants
-                    </div>
-                  )}
+                  <div className={styles.agendaPlaceholder}>Content TBD</div>
                 </div>
               </div>
             ))}
