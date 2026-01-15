@@ -63,35 +63,72 @@ export const Partner = () => {
           <span className={styles.partnerSideLeft} aria-hidden="true" />
           <span className={styles.partnerSideRight} aria-hidden="true" />
           <div className={styles.partnerRow}>
-            <span className={styles.partnerLabel}>Technology Partners</span>
+            <div  className={styles.partnerLabelContainer}>
+                <p className={styles.partnerLabel}>Technology</p>
+               <p className={styles.partnerLabel}>Partners</p>
+            </div>
             <div className={styles.partnerLogos}>
-              {technologyPartners.map(partner => (
-                <Image
-                  key={partner.title}
-                  width={120}
-                  height={40}
-                  className={styles.partnerLogoImage}
-                  src={partner.src}
-                  sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
-                  alt={partner.title}
-                />
-              ))}
+              <div
+                className={`${styles.partnerLogosTrack} ${styles.partnerLogosTrackRight}`}
+              >
+                {technologyPartners.map(partner => (
+                  <Image
+                    key={`${partner.title}-a`}
+                    width={120}
+                    height={40}
+                    className={styles.partnerLogoImage}
+                    src={partner.src}
+                    sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
+                    alt={partner.title}
+                  />
+                ))}
+                {technologyPartners.map(partner => (
+                  <Image
+                    key={`${partner.title}-b`}
+                    width={120}
+                    height={40}
+                    className={styles.partnerLogoImage}
+                    src={partner.src}
+                    sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                ))}
+              </div>
             </div>
           </div>
           <div className={styles.partnerRow}>
-            <span className={styles.partnerLabel}>Community Support</span>
+            
+            <div className={styles.partnerLabelContainer}>
+              <p className={styles.partnerLabel}>Community</p>
+              <p className={styles.partnerLabel}>Support</p>
+            </div>
             <div className={styles.partnerLogos}>
-              {communitySupporters.map(partner => (
-                <Image
-                  key={partner.title}
-                  width={120}
-                  height={40}
-                  className={styles.partnerLogoImage}
-                  src={partner.src}
-                  sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
-                  alt={partner.title}
-                />
-              ))}
+              <div className={styles.partnerLogosTrack}>
+                {communitySupporters.map(partner => (
+                  <Image
+                    key={`${partner.title}-a`}
+                    width={120}
+                    height={40}
+                    className={styles.partnerLogoImage}
+                    src={partner.src}
+                    sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
+                    alt={partner.title}
+                  />
+                ))}
+                {communitySupporters.map(partner => (
+                  <Image
+                    key={`${partner.title}-b`}
+                    width={120}
+                    height={40}
+                    className={styles.partnerLogoImage}
+                    src={partner.src}
+                    sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
