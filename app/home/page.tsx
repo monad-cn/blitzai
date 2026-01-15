@@ -123,7 +123,20 @@ export default function Home() {
 
       {/* Register Section */}
       <section id="register" className={styles.registerSection}>
-        
+        <div className={styles.container}>
+          <div className={styles.registerContent}>
+            <p className={styles.registerText}>
+              This hackathon adopts an innovative “online mentorship + offline
+              intensive dev camp” model, supporting developers from theory to
+              hands-on building.
+            </p>
+            <div className={styles.buttonWrapper}>
+              <Button type="primary" className={styles.ctaButton}>
+                Register Now
+              </Button>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Agenda Section */}
@@ -140,17 +153,12 @@ export default function Home() {
 
           <div className={styles.agendaList}>
             {agendaItems.map((item, index) => (
-              <div
-                key={index}
-                className={styles.agendaItem}
-              >
+              <div key={index} className={styles.agendaItem}>
                 <div className={styles.leftColumn}>
                   <div className={styles.timeLabel}>{item.time}</div>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
                   {item.description ? (
-                    <p className={styles.itemDescription}>
-                      {item.description}
-                    </p>
+                    <p className={styles.itemDescription}>{item.description}</p>
                   ) : null}
                 </div>
                 <div className={styles.rightColumn}>
