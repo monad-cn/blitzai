@@ -39,7 +39,7 @@ export const Partner = () => {
               width={300}
               height={300}
               className={`${styles.partnerCharacter} ${styles.partnerCharacterCenterLeft}`}
-              src="/home/manga-girl/manga_girl_2.png"
+              src="/home/manga-girl/manga_girl_4.png" 
               sizes="(max-width: 900px) 110px, (max-width: 1200px) 18vw, 220px"
               alt=""
             />
@@ -47,7 +47,7 @@ export const Partner = () => {
               width={300}
               height={300}
               className={`${styles.partnerCharacter} ${styles.partnerCharacterCenterRight}`}
-              src="/home/manga-girl/manga_girl_4.png"
+             src="/home/manga-girl/manga_girl_2.png"
               sizes="(max-width: 900px) 120px, (max-width: 1200px) 24vw, 310px"
               alt=""
             />
@@ -142,6 +142,7 @@ export const Partner = () => {
             alt=""
           />
         </div>
+        <p className={styles.partnerTagline}>we got what you need</p>
       </div>
     </section>
   )
