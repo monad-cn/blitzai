@@ -43,20 +43,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   z-index: 2;
   text-align: center;
   color: #fff;
 }
 
 .title {
+  position: relative;
+  display: inline-block;
+  /* font-family: 'Apercu', 'Helvetica', sans-serif; */
   font-size: clamp(4.75rem, 8.5vw, 11rem);
   line-height: 1.02;
   font-weight: 800;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.85), 0 6px 0 rgba(16, 16, 20, 0.9),
-    0 18px 32px rgba(0, 0, 0, 0.55), 6px 6px 0 rgba(123, 84, 255, 0.75);
   margin: 0;
+}
+
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  color: #000;
+  -webkit-text-stroke: 1px #7d498d;
+  z-index: -1;
+}
+
+.title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  color: transparent;
+  -webkit-text-stroke: 1px #7d498d;
+  filter: blur(6px);
+  z-index: -2;
 }
 
 .subtitleRow {

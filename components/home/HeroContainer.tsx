@@ -17,8 +17,12 @@ export const HeroContainer = () => {
       </div>
 
       <div className={styles.titleBlock}>
-        <p className={styles.title}>Rebel in Paradise</p>
-        <p className={styles.title}>AI Hackathon</p>
+        <p className={styles.title} data-text="Rebel in Paradise">
+          Rebel in Paradise
+        </p>
+        <p className={styles.title} data-text="AI Hackathon">
+          AI Hackathon
+        </p>
       </div>
 
       <div className={styles.subtitleRow}>
