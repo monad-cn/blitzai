@@ -39,16 +39,29 @@ export default function Home() {
 
   const agendaItems = [
     {
-      title: 'Freely Build'
+      time: '10:00am',
+      title: 'Registration & On-site Hacking',
+      description: ''
     },
     {
-      title: 'Industry Insight'
+      time: '13:30pm',
+      title: 'Opening Remarks',
+      description: ''
     },
     {
-      title: 'Lightening Pitch'
+      time: '14:00pm',
+      title: 'Panel 1 — Doubao, Zhipu, Monad',
+      description: ''
     },
     {
-      title: 'Network'
+      time: '14:45pm',
+      title: 'Panel 2 — SiliconFlow, 42 Chapters',
+      description: ''
+    },
+    {
+      time: '15:30pm',
+      title: 'Lightning Pitches',
+      description: ''
     }
   ]
 
@@ -138,20 +151,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={styles.agendaActions}>
-            <Button type="primary" className={styles.agendaButton}>
-              Luma Register
-            </Button>
-            <Button type="primary" className={styles.agendaButton}>
-              Luma Register
-            </Button>
-          </div>
-
           <div className={styles.agendaList}>
             {agendaItems.map((item, index) => (
               <div key={index} className={styles.agendaItem}>
                 <div className={styles.leftColumn}>
+                  <div className={styles.timeLabel}>{item.time}</div>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
+                  {item.description ? (
+                    <p className={styles.itemDescription}>{item.description}</p>
+                  ) : null}
                 </div>
                 <div className={styles.rightColumn}>
                   <div className={styles.agendaPlaceholder}>Content TBD</div>
