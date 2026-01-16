@@ -52,9 +52,9 @@
 .title {
   position: relative;
   display: inline-block;
-  /* font-family: 'Apercu', 'Helvetica', sans-serif; */
+  font-family: "Satoshi", system-ui, sans-serif;
   font-size: clamp(4.75rem, 8.5vw, 11rem);
-  line-height: 1.02;
+  line-height: 1;
   font-weight: 800;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -120,7 +120,7 @@
   .titleBlock {
     flex: 0 1 auto;
     justify-content: flex-start;
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
 
   .subtitleRow {
