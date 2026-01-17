@@ -56,11 +56,11 @@ export const Partner = () => {
     return (
       <Image
         key={`${item.title}-${suffix}`}
-        width={120}
-        height={40}
+        width={200}
+        height={70}
         className={styles.partnerLogoImage}
         src={item.src}
-        sizes="(max-width: 900px) 90px, (max-width: 1200px) 110px, 120px"
+        sizes="(max-width: 900px) 130px, (max-width: 1200px) 170px, 200px"
         alt={isHidden ? '' : item.title}
         aria-hidden={isHidden}
       />
