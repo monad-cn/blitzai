@@ -32,6 +32,13 @@ export function Header() {
         <div className={styles.navWrapper}>
           <Link href="/" className={styles.logo}>
             <Image src="/logo.png" alt="MONAD Logo" width={300} height={300} />
+            <Image
+              src="/home/logo/segmentault.png"
+              alt="Segmentault Logo"
+              width={200}
+              height={80}
+              className={styles.logoSecondary}
+            />
           </Link>
 
           <div className={styles.desktopNav}>

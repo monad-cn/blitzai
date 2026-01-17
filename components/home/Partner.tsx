@@ -28,9 +28,15 @@ export const Partner = () => {
 
   const partnerLogos: PartnerItem[] = [
     { type: 'label', text: 'Technology Partners' },
-    ...technologyPartners.map(partner => ({ type: 'logo' as const, ...partner })),
+    ...technologyPartners.map(partner => ({
+      type: 'logo' as const,
+      ...partner
+    })),
     { type: 'label', text: 'Community Support' },
-    ...communitySupporters.map(partner => ({ type: 'logo' as const, ...partner }))
+    ...communitySupporters.map(partner => ({
+      type: 'logo' as const,
+      ...partner
+    }))
   ]
 
   const renderPartnerItem = (
@@ -84,7 +90,7 @@ export const Partner = () => {
               width={300}
               height={300}
               className={`${styles.partnerCharacter} ${styles.partnerCharacterCenterLeft}`}
-              src="/home/manga-girl/manga_girl_4.png" 
+              src="/home/manga-girl/manga_girl_4.png"
               sizes="(max-width: 900px) 110px, (max-width: 1200px) 18vw, 220px"
               alt=""
             />
@@ -92,7 +98,7 @@ export const Partner = () => {
               width={300}
               height={300}
               className={`${styles.partnerCharacter} ${styles.partnerCharacterCenterRight}`}
-             src="/home/manga-girl/manga_girl_2.png"
+              src="/home/manga-girl/manga_girl_2.png"
               sizes="(max-width: 900px) 120px, (max-width: 1200px) 24vw, 310px"
               alt=""
             />
@@ -116,16 +122,7 @@ export const Partner = () => {
             </div>
           </div>
         </div>
-        <div className={styles.hostGroup}>
-          <Image
-            src="/home/logo/Co-host.png"
-            width={600}
-            height={100}
-            className={styles.hostLogoImage}
-            sizes="(max-width: 900px) 70vw, (max-width: 1200px) 55vw, 540px"
-            alt=""
-          />
-        </div>
+
         <p className={styles.partnerTagline}>we got what you need</p>
       </div>
     </section>

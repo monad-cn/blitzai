@@ -80,6 +80,13 @@
   text-decoration: none;
 }
 
+.logoSecondary {
+  width: auto;
+  height: 2rem;
+  object-fit: contain;
+  padding-left: 4rem;
+}
+
 .logoText {
   letter-spacing: 0.05em;
 }

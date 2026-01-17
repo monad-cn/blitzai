@@ -20,11 +20,6 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.hostGroup {
-  position: absolute;
-  top: -110px;
-}
-
 .partnerTagline {
   margin: 4rem 0 0;
   text-align: center;
@@ -33,7 +28,12 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: transparent;
-  background-image: linear-gradient(90deg, #ffffff 0%, #c8b8ff 45%, #7ee8ff 100%);
+  background-image: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #c8b8ff 45%,
+    #7ee8ff 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
@@ -92,14 +92,13 @@
   top: 0;
   transform: translateY(-100%) translateX(50%);
   bottom: 200px;
-   width: clamp(160px, 26vw, 310px);
+  width: clamp(160px, 26vw, 310px);
 }
 
 .partnerCharacterCenterRight {
- 
   top: 0;
-  transform: translateY(-100%)  translateX(-50%);
-  
+  transform: translateY(-100%) translateX(-50%);
+
   left: 42%;
   bottom: 200px;
 }
@@ -134,18 +133,25 @@
   width: 18px;
   height: 66px;
   transform: translateY(-50%);
-  background-image: radial-gradient(
-      circle,
-      rgba(201, 182, 255, 0.95) 0 4px,
-      transparent 4.5px
-    ),
+  background-image:
+    radial-gradient(circle, rgba(201, 182, 255, 0.95) 0 4px, transparent 4.5px),
     linear-gradient(rgba(201, 182, 255, 0.95), rgba(201, 182, 255, 0.95)),
     linear-gradient(rgba(201, 182, 255, 0.95), rgba(201, 182, 255, 0.95)),
     linear-gradient(rgba(201, 182, 255, 0.95), rgba(201, 182, 255, 0.95)),
     radial-gradient(circle, rgba(201, 182, 255, 0.95) 0 4px, transparent 4.5px);
   background-repeat: no-repeat;
-  background-size: 8px 8px, 22px 4px, 18px 4px, 22px 4px, 8px 8px;
-  background-position: 50% 0, 50% 28%, 50% 50%, 50% 72%, 50% 100%;
+  background-size:
+    8px 8px,
+    22px 4px,
+    18px 4px,
+    22px 4px,
+    8px 8px;
+  background-position:
+    50% 0,
+    50% 28%,
+    50% 50%,
+    50% 72%,
+    50% 100%;
   opacity: 0.9;
   pointer-events: none;
   z-index: 2;
@@ -167,7 +173,7 @@
   padding-left: 4rem;
 }
 
-.partnerLabelContainer{
+.partnerLabelContainer {
   text-align: center;
 }
 
@@ -279,7 +285,12 @@
   .partnerSideRight {
     width: 14px;
     height: 64px;
-    background-size: 6px 6px, 10px 3px, 14px 3px, 10px 3px, 6px 6px;
+    background-size:
+      6px 6px,
+      10px 3px,
+      14px 3px,
+      10px 3px,
+      6px 6px;
   }
 
   .partnerSideLeft {
@@ -292,13 +303,6 @@
 }
 
 @media (max-width: 1600px) {
-
-  .hostGroup {
- 
-  top: -48px;
-}
-
-
   .partner {
     padding: 0 6rem 8rem;
   }
