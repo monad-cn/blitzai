@@ -39,28 +39,19 @@ export default function Home() {
 
   const agendaItems = [
     {
-      time: '10:00am',
-      title: 'Registration & On-site Hacking',
+      title: 'Freely Build',
       description: ''
     },
     {
-      time: '13:30pm',
-      title: 'Opening Remarks',
+      title: 'Industry Insight',
       description: ''
     },
     {
-      time: '14:00pm',
-      title: 'Panel 1 — Doubao, Zhipu, Monad',
+      title: 'Lightning Pitch',
       description: ''
     },
     {
-      time: '14:45pm',
-      title: 'Panel 2 — SiliconFlow, 42 Chapters',
-      description: ''
-    },
-    {
-      time: '15:30pm',
-      title: 'Lightning Pitches',
+      title: 'Network',
       description: ''
     }
   ]
@@ -143,7 +134,6 @@ export default function Home() {
             {agendaItems.map((item, index) => (
               <div key={index} className={styles.agendaItem}>
                 <div className={styles.leftColumn}>
-                  <div className={styles.timeLabel}>{item.time}</div>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
                   {item.description ? (
                     <p className={styles.itemDescription}>{item.description}</p>

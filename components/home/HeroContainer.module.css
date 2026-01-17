@@ -113,6 +113,11 @@
   height: 28px;
 }
 
+.arrowIcon svg{
+  width: 32px;
+  height: 32px;
+}
+
 
 .ctaButton {
   background: linear-gradient(135deg, #8b5cf6, #a855f7) !important;
