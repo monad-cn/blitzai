@@ -171,9 +171,10 @@ export default function Home() {
 
                 <div className={styles.prizeDetails}>
                   <div className={styles.prizeRow}>
-                    <span className={styles.prizeLabel}>
-                      Grand Prize (1 team)
-                    </span>
+                    <div className={styles.prizeMeta}>
+                      <span className={styles.prizeLabel}>Grand Prize</span>
+                      <span className={styles.trackBadge}>1 team</span>
+                    </div>
                     <span className={styles.prizeAmount}>$5,000</span>
                   </div>
 
@@ -182,17 +183,23 @@ export default function Home() {
                       Track Awards (per track):
                     </p>
                     <div className={styles.prizeRow}>
-                      <span className={styles.prizeLabel}>
-                        1st Place (3 teams, 1 per track)
-                      </span>
+                      <div className={styles.prizeMeta}>
+                        <span className={styles.prizeLabel}>1st Place</span>
+                        <span className={styles.trackBadge}>
+                          3 teams, 1 per track
+                        </span>
+                      </div>
                       <span className={styles.prizeAmount}>
                         $3,000 × 3  
                       </span>
                     </div>
                     <div className={styles.prizeRow}>
-                      <span className={styles.prizeLabel}>
-                        2nd Place (3 teams, 1 per track)
-                      </span>
+                      <div className={styles.prizeMeta}>
+                        <span className={styles.prizeLabel}>2nd Place</span>
+                        <span className={styles.trackBadge}>
+                          3 teams, 1 per track
+                        </span>
+                      </div>
                       <span className={styles.prizeAmount}>
                         $2,000 × 3  
                       </span>
