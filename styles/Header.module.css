@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  left: -1.6rem;
+  left: -0.6em;
   gap: 0.5rem;
   font-weight: 500;
   font-size: 1.25rem;
@@ -82,9 +82,9 @@
 
 .logoSecondary {
   width: auto;
-  height: 2rem;
+  height: 1.6rem;
   object-fit: contain;
-  padding-left: 4rem;
+  padding-left: 6rem;
 }
 
 .logoText {

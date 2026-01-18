@@ -31,12 +31,12 @@ export function Header() {
       <div className={styles.navContainer}>
         <div className={styles.navWrapper}>
           <Link href="/" className={styles.logo}>
-            <Image src="/logo.png" alt="MONAD Logo" width={300} height={300} />
+            <Image src="/logo.png" alt="MONAD Logo" width={220} height={50} />
             <Image
               src="/home/logo/segmentault.png"
               alt="Segmentault Logo"
-              width={200}
-              height={80}
+              width={160}
+              height={50}
               className={styles.logoSecondary}
             />
           </Link>
