@@ -113,7 +113,7 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.agendaHeader}>
             <h2 className={styles.agendaTitle}>
-              Hacker Camp <span className={styles.accent}>Agenda</span>
+              Hacker  <span className={styles.accent}>Camp</span>
             </h2>
             <p className={styles.agendaSubtitle}>
               Full-day event with workshops, panels, and networking
