@@ -7,23 +7,23 @@ export const Partner = () => {
     | { type: 'logo'; title: string; src: string }
 
   const technologyPartners = [
-    { title: 'KIMI', src: '/home/logo/kimi.png' },
-    { title: 'Zhitu', src: '/home/logo/zp.png' },
-    { title: 'YouWare', src: '/home/logo/youware.png' },
-    { title: 'StepFun', src: '/home/logo/jieyuexc.png' },
-    { title: 'Rokid', src: '/home/logo/rokid.png' },
-    { title: 'SiliconFlow', src: '/home/logo/siliconflow.png' }
+    { title: 'KIMI', src: '/home/logo/kimi.svg' },
+    { title: 'Zhitu', src: '/home/logo/zp.svg' },
+    { title: 'YouWare', src: '/home/logo/youware.svg' },
+    { title: 'StepFun', src: '/home/logo/jieyuexc.svg' },
+    { title: 'Rokid', src: '/home/logo/rokid.svg' },
+    { title: 'SiliconFlow', src: '/home/logo/siliconflow.svg' }
   ]
 
   const communitySupporters = [
-    { title: 'Hackathon Weekly', src: '/home/logo/hackathoonweekly.png' },
-    { title: 'Datawhale', src: '/home/logo/datawhale.png' },
-    { title: 'WaytoAGI', src: '/home/logo/waytoAGI.png' },
-    { title: 'Epic', src: '/home/logo/epic.png' },
-    { title: 'AIGC Open', src: '/home/logo/aigc_open.png' },
-    { title: 'Rust.cc', src: '/home/logo/rustcc.png' },
-    { title: 'PyChina', src: '/home/logo/pychina.png' },
-    { title: 'RTE Dev', src: '/home/logo/kaiyuanshe.png' }
+    { title: 'Hackathon Weekly', src: '/home/logo/hackathoonweekly.svg' },
+    { title: 'Datawhale', src: '/home/logo/datawhale.svg' },
+    { title: 'WaytoAGI', src: '/home/logo/waytoAGI.svg' },
+    { title: 'Epic', src: '/home/logo/epic.svg' },
+    { title: 'AIGC Open', src: '/home/logo/aigc_open.svg' },
+    { title: 'Rust.cc', src: '/home/logo/rustcc.svg' },
+    { title: 'PyChina', src: '/home/logo/pychina.svg' },
+    { title: 'RTE Dev', src: '/home/logo/kaiyuanshe.svg' }
   ]
 
   const partnerLogos: PartnerItem[] = [
@@ -62,11 +62,11 @@ export const Partner = () => {
     return (
       <Image
         key={`${item.title}-${suffix}`}
-        width={200}
-        height={70}
+        width={180}
+        height={60}
         className={styles.partnerLogoImage}
         src={item.src}
-        sizes="(max-width: 900px) 130px, (max-width: 1200px) 170px, 200px"
+        sizes="(max-width: 900px) 110px, (max-width: 1200px) 150px, 180px"
         alt={isHidden ? '' : item.title}
         aria-hidden={isHidden}
       />
