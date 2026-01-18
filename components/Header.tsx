@@ -51,9 +51,9 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/#register" className={styles.applyButton}>
-              APPLY
-            </Link>
+            {/* <Link href="/#register" className={styles.applyButton}>
+             APPLY
+            </Link>  */}
           </div>
 
           <button
