@@ -1,39 +1,49 @@
 import Image from 'next/image'
+import type { CSSProperties } from 'react'
 import styles from './Partner.module.css'
 
 export const Partner = () => {
   type PartnerItem =
     | { type: 'label'; text: string }
-    | { type: 'logo'; title: string; src: string }
+    | { type: 'logo'; title: string; src: string; logoHeight?: string }
 
   const technologyPartners = [
-    { title: 'KIMI', src: '/home/logo/kimi.svg' },
-    { title: 'Zhitu', src: '/home/logo/zp.svg' },
+    { title: 'KIMI', src: '/home/logo/kimi.svg', },
+    { title: 'Zhipu', src: '/home/logo/zp.svg' ,logoHeight:'1.8rem'},
     { title: 'DouBao', src: '/home/logo/doubao.svg' },
-    { title: 'YouWare', src: '/home/logo/youware.svg' },
+    { title: 'YouWare', src: '/home/logo/youware.svg' }, 
+
     { title: 'StepFun', src: '/home/logo/jieyuexc.svg' },
-    { title: 'Rokid', src: '/home/logo/rokid.svg' },
+    { title: 'Rokid', src: '/home/logo/rokid.svg',logoHeight:'2rem' },
     { title: 'SiliconFlow', src: '/home/logo/siliconflow.svg' },
-    { title: 'OshwHub', src: '/home/logo/oshwhub.svg' },
+    { title: 'OshwHub', src: '/home/logo/oshwhub.svg' }
   ]
 
   const VC = [
     { title: 'Delphi Ventures', src: '/home/logo/vc/delphi_ventures.svg' },
     { title: 'Vertext', src: '/home/logo/vc/vertext.svg' },
-    { title: 'Archetype', src: '/home/logo/vc/archetype.svg' },
-    { title: 'Pantera', src: '/home/logo/vc/pantera.svg' },
-    { title: 'Miracleplus', src: '/home/logo/vc/miracleplus.svg' }
+    { title: 'Archetype', src: '/home/logo/vc/archetype.svg' ,logoHeight:'2rem'},
+    { title: 'Pantera', src: '/home/logo/vc/pantera.svg',logoHeight:'2rem' },
+    { title: 'CoinFund', src: '/home/logo/vc/coinfund.svg',logoHeight:'1.6rem' },
+    { title: 'EnlightCapital', src: '/home/logo/vc/enlightcapital.svg',logoHeight:'2rem' },
+    { title: 'ZhiYuanCT', src: '/home/logo/vc/zhiyuanct.svg' }
+    // { title: 'Miracleplus', src: '/home/logo/vc/miracleplus.svg' }
   ]
 
   const communitySupporters = [
-    { title: 'Hackathon Weekly', src: '/home/logo/hackathoonweekly.svg' },
-    { title: 'Datawhale', src: '/home/logo/datawhale.svg' },
-    { title: 'WaytoAGI', src: '/home/logo/waytoAGI.svg' },
-    { title: 'Epic', src: '/home/logo/epic.svg' },
     { title: 'AIGC Open', src: '/home/logo/aigc_open.svg' },
-    { title: 'Rust.cc', src: '/home/logo/rustcc.svg' },
+    { title: 'Bonjour', src: '/home/logo/bonjour.svg' },
+    { title: 'Datawhale', src: '/home/logo/datawhale.svg' },
+    { title: 'Epic', src: '/home/logo/epic.svg' },
+    { title: 'GuiXingRen', src: '/home/logo/guixingren.svg' },
+    { title: 'Hackathon Weekly', src: '/home/logo/hackathoonweekly.svg' },
+    { title: 'RTE', src: '/home/logo/rte.svg',logoHeight:'2rem' },
+    { title: 'KaiYuanShe', src: '/home/logo/kaiyuanshe.svg' },
+    { title: 'MoonBit', src: '/home/logo/moonbit.svg' },
     { title: 'PyChina', src: '/home/logo/pychina.svg' },
-    { title: 'RTE Dev', src: '/home/logo/kaiyuanshe.svg' }
+    { title: 'QingKe', src: '/home/logo/qingke.svg' ,logoHeight:'2rem'},
+    { title: 'Rust.cc', src: '/home/logo/rustcc.svg' },
+    { title: 'WaytoAGI', src: '/home/logo/waytoAGI.svg' }
   ]
 
   const partnerLogos: PartnerItem[] = [
@@ -80,6 +90,11 @@ export const Partner = () => {
         width={180}
         height={60}
         className={styles.partnerLogoImage}
+        style={
+          item.logoHeight
+            ? ({ '--partner-logo-height': item.logoHeight } as CSSProperties)
+            : undefined
+        }
         src={item.src}
         sizes="(max-width: 900px) 110px, (max-width: 1200px) 150px, 180px"
         alt={isHidden ? '' : item.title}
