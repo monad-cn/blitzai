@@ -436,6 +436,11 @@
   gap: 6rem;
   max-width: 1152px;
   margin: 0 auto;
+  justify-items: center;
+}
+
+.featureCard {
+  text-align: center;
 }
 
 .featureTitle {

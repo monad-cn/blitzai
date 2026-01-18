@@ -122,11 +122,13 @@
 .ctaButton {
   background: linear-gradient(135deg, #8b5cf6, #a855f7) !important;
   border: none !important;
-  height: 3rem !important;
+  height: 3.6rem !important;
+  width: 10rem;
   padding: 0 2rem !important;
   border-radius: 9999px !important;
   font-size: 1rem !important;
   box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4) !important;
+  
 }
 
 .ctaButton:hover {

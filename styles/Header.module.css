@@ -95,6 +95,24 @@
   display: none;
   gap: 2rem;
 }
+
+.applyButton {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.9), rgba(236, 72, 153, 0.9));
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.applyButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(236, 72, 153, 0.45);
+  filter: brightness(1.05);
+}
 .mobileMenuButton {
   display: flex;
   align-items: center;
@@ -130,6 +148,19 @@
 
 .mobileNavLink:hover {
   color: #8b5cf6;
+}
+
+.mobileApplyButton {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.9), rgba(236, 72, 153, 0.9));
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.35);
 }
 
 @media (min-width: 768px) {

@@ -51,6 +51,9 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link href="/#register" className={styles.applyButton}>
+              APPLY
+            </Link>
           </div>
 
           <button
@@ -78,6 +81,13 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/#register"
+              className={styles.mobileApplyButton}
+              onClick={() => setIsOpen(false)}
+            >
+              APPLY
+            </Link>
           </div>
         )}
       </div>
