@@ -129,7 +129,7 @@ export default function Home() {
             </button>
             <button
               type="button"
-              className={`${styles.agendaButton} ${styles.agendaButtonSecondary}`}
+              className={`${styles.agendaButton}`}
             >
               Shenzhen
             </button>

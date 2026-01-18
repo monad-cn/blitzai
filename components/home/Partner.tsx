@@ -9,10 +9,12 @@ export const Partner = () => {
   const technologyPartners = [
     { title: 'KIMI', src: '/home/logo/kimi.svg' },
     { title: 'Zhitu', src: '/home/logo/zp.svg' },
+    { title: 'DouBao', src: '/home/logo/doubao.svg' },
     { title: 'YouWare', src: '/home/logo/youware.svg' },
     { title: 'StepFun', src: '/home/logo/jieyuexc.svg' },
     { title: 'Rokid', src: '/home/logo/rokid.svg' },
-    { title: 'SiliconFlow', src: '/home/logo/siliconflow.svg' }
+    { title: 'SiliconFlow', src: '/home/logo/siliconflow.svg' },
+    { title: 'OshwHub', src: '/home/logo/oshwhub.svg' },
   ]
 
   const VC = [
