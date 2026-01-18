@@ -39,15 +39,18 @@ export default function Home() {
   const agendaItems = [
     {
       title: 'Hands-on Hacking Environment',
-      description: 'We create a developer-friendly, on-site space for building, collaborating, and connecting. Come to code, meet peers, and form ideas together in a setting designed for creativity and flow.'
+      description:
+        'We create a developer-friendly, on-site space for building, collaborating, and connecting. Come to code, meet peers, and form ideas together in a setting designed for creativity and flow.'
     },
     {
       title: 'Industry Insight',
-      description: 'Learn directly from industry leaders and VCs across LLMs, infrastructure, and agents. Explore real edge cases and the intersections between AI and crypto with people shaping the frontier.'
+      description:
+        'Learn directly from industry leaders and VCs across LLMs, infrastructure, and agents. Explore real edge cases and the intersections between AI and crypto with people shaping the frontier.'
     },
     {
       title: 'Lightning Pitches',
-      description: 'Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time.'
+      description:
+        'Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time.'
     }
   ]
 
@@ -113,11 +116,23 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.agendaHeader}>
             <h2 className={styles.agendaTitle}>
-              Hacker  <span className={styles.accent}>Camp</span>
+              Hacker <span className={styles.accent}>Camp</span>
             </h2>
             <p className={styles.agendaSubtitle}>
-              Full-day event with workshops, panels, and networking
+              Join our full-day developer events in Beijing (Jan 31) and
+              Shenzhen (Feb 7), featuring workshops, panels, and networking
             </p>
+          </div>
+          <div className={styles.agendaActions}>
+            <button type="button" className={styles.agendaButton}>
+              Beijing
+            </button>
+            <button
+              type="button"
+              className={`${styles.agendaButton} ${styles.agendaButtonSecondary}`}
+            >
+              Shenzhen
+            </button>
           </div>
 
           <div className={styles.agendaList}>
@@ -129,7 +144,6 @@ export default function Home() {
                     <p className={styles.itemDescription}>{item.description}</p>
                   ) : null}
                 </div>
-               
               </div>
             ))}
           </div>
@@ -153,9 +167,7 @@ export default function Home() {
             <div className={styles.prizeCard}>
               <div className={styles.cardContent}>
                 <div>
-                  <h3 className={styles.cardTitle}>
-                    Cash Prizes (USD 20,000)
-                  </h3>
+                  <h3 className={styles.cardTitle}>Cash Prizes (USD 20,000)</h3>
                   <p className={styles.cardDescription}>
                     Cash prizes are structured across three tracks, with 1st and
                     2nd place awards for each track, plus one Grand Prize
@@ -183,9 +195,7 @@ export default function Home() {
                           3 teams, 1 per track
                         </span>
                       </div>
-                      <span className={styles.prizeAmount}>
-                        $3,000 × 3  
-                      </span>
+                      <span className={styles.prizeAmount}>$3,000 × 3</span>
                     </div>
                     <div className={styles.prizeRow}>
                       <div className={styles.prizeMeta}>
@@ -194,9 +204,7 @@ export default function Home() {
                           3 teams, 1 per track
                         </span>
                       </div>
-                      <span className={styles.prizeAmount}>
-                        $2,000 × 3  
-                      </span>
+                      <span className={styles.prizeAmount}>$2,000 × 3</span>
                     </div>
                   </div>
 
@@ -216,32 +224,32 @@ export default function Home() {
                     Creative & Resource Awards (USD 20,000)
                   </h3>
                   <p className={styles.cardDescription}>
-                   Beyond cash prizes, we collaborate with partners to provide high-value creative and resource awards:
+                    Beyond cash prizes, we collaborate with partners to provide
+                    high-value creative and resource awards:
                   </p>
                 </div>
 
                 <div className={styles.resourceList}>
-                  
-
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                     NVIDIA DGX Spark AI Supercomputer on your desk
-
+                      NVIDIA DGX Spark AI Supercomputer on your desk
                     </p>
                   </div>
 
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                     Free trial credits for cutting-edge models, developer tools, and infrastructure
+                      Free trial credits for cutting-edge models, developer
+                      tools, and infrastructure
                     </p>
                   </div>
 
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                     Top Tech Company Access including office tours and internships
+                      Top Tech Company Access including office tours and
+                      internships
                     </p>
                   </div>
                 </div>
@@ -278,7 +286,11 @@ export default function Home() {
             <div className={styles.ctaActions}>
               <div className={styles.ctaAction}>
                 <div className={styles.buttonWrapper}>
-                  <Button type="primary" size="large" className={styles.ctaButton}>
+                  <Button
+                    type="primary"
+                    size="large"
+                    className={styles.ctaButton}
+                  >
                     Register Now
                   </Button>
                 </div>
