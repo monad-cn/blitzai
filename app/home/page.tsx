@@ -38,20 +38,16 @@ export default function Home() {
 
   const agendaItems = [
     {
-      title: 'Freely Build',
-      description: ''
+      title: 'Hands-on Hacking Environment',
+      description: 'We create a developer-friendly, on-site space for building, collaborating, and connecting. Come to code, meet peers, and form ideas together in a setting designed for creativity and flow.'
     },
     {
       title: 'Industry Insight',
-      description: ''
+      description: 'Learn directly from industry leaders and VCs across LLMs, infrastructure, and agents. Explore real edge cases and the intersections between AI and crypto with people shaping the frontier.'
     },
     {
-      title: 'Lightning Pitch',
-      description: ''
-    },
-    {
-      title: 'Network',
-      description: ''
+      title: 'Lightning Pitches',
+      description: 'Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time.'
     }
   ]
 
@@ -133,9 +129,7 @@ export default function Home() {
                     <p className={styles.itemDescription}>{item.description}</p>
                   ) : null}
                 </div>
-                <div className={styles.rightColumn}>
-                  <div className={styles.agendaPlaceholder}>Content TBD</div>
-                </div>
+               
               </div>
             ))}
           </div>
