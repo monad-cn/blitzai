@@ -193,18 +193,13 @@
   font-size: 15px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
+  contain: layout paint;
 }
 
-.partnerLogosTrack {
+.partnerMarquee {
   display: flex;
   align-items: center;
-  gap: 22px;
-  width: max-content;
-  animation: partner-scroll-left 26s linear infinite;
-}
-
-.partnerLogosTrackRight {
-  animation-name: partner-scroll-right;
+   
 }
 
 .partnerLogoLabel {
@@ -228,33 +223,8 @@
   height: var(--partner-logo-height, clamp(36px, 3.8vw, 46px));
   width: auto;
   object-fit: contain;
-  margin: 0 2px;
-}
-
-@keyframes partner-scroll-left {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes partner-scroll-right {
-  from {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .partnerLogosTrack {
-    animation: none;
-  }
+  /* margin: 0 0.2rem; */
+  margin: 0 0.3rem;
 }
 
 @media (max-width: 900px) {

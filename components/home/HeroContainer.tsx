@@ -29,8 +29,8 @@ export const HeroContainer = () => {
       <div className={styles.subtitleRow}>
         <div className={styles.arrowCluster}>
           <div className={styles.arrowIcon}>
-            <ArrowUpLeft  />
-            <ArrowUpLeft  />
+            <ArrowUpLeft />
+            <ArrowUpLeft />
           </div>
           <div>
             <Plus />
@@ -45,16 +45,22 @@ export const HeroContainer = () => {
             <Plus />
             <Plus />
           </div>
-          <div  className={styles.arrowIcon}>
-            <ArrowUpRight  />
-            <ArrowUpRight  />
+          <div className={styles.arrowIcon}>
+            <ArrowUpRight />
+            <ArrowUpRight />
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-[clamp(1rem,2vw,2rem)] left-1/2 flex -translate-x-1/2 flex-col items-center gap-[clamp(1.5rem,2.5vw,2.5rem)] text-white">
-        <Button type="primary" size="large" className={styles.ctaButton}>
-          <span className='font-bold'>Register Now</span>
+        <Button
+          href="https://mojo.devnads.com/events/10"
+          target='_blank'
+          type="primary"
+          size="large"
+          className={styles.ctaButton}
+        >
+          <span className="font-bold">Register Now</span>
         </Button>
         <div className="relative flex h-12 w-12 pt-[clamp(1.5rem,3vw,3.4rem)] items-center justify-center">
           <ArrowDown className="relative h-[2.2rem] w-[2.2rem] animate-bounce text-violet-200 drop-shadow-[0_0_16px_rgba(139,92,246,0.95)]" />

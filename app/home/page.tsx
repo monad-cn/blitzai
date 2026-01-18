@@ -54,21 +54,6 @@ export default function Home() {
     }
   ]
 
-  const links = {
-    Resources: [
-      { label: 'Documentation', href: 'https://docs.monad.xyz' },
-      { label: 'GitHub', href: '#' },
-      { label: 'Discord', href: '#' },
-      { label: 'Twitter', href: '#' }
-    ],
-    Event: [
-      { label: 'Agenda', href: '/#agenda' },
-      { label: 'Tracks', href: '/tracks' },
-      { label: 'Prizes', href: '/#prizes' },
-      { label: 'Register', href: '/#register' }
-    ]
-  }
-
   return (
     <div className={styles.home}>
       {/* Navigation */}
@@ -124,15 +109,22 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.agendaActions}>
-            <button type="button" className={styles.agendaButton}>
+            <a
+              className={styles.agendaButton}
+              href="https://luma.com/irllzbeu?utm_source=lp"
+              target="_blank"
+              rel="noreferrer"
+            >
               Beijing
-            </button>
-            <button
-              type="button"
-              className={`${styles.agendaButton}`}
+            </a>
+            <a
+              className={styles.agendaButton}
+              href="https://luma.com/je6if25j?utm_source=lp"
+              target="_blank"
+              rel="noreferrer"
             >
               Shenzhen
-            </button>
+            </a>
           </div>
 
           <div className={styles.agendaList}>
@@ -290,6 +282,9 @@ export default function Home() {
                     type="primary"
                     size="large"
                     className={styles.ctaButton}
+                    href="https://mojo.devnads.com/events/10"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Register Now
                   </Button>

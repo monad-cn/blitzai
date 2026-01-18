@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
-import type { CSSProperties } from 'react'
+import Marquee from 'react-fast-marquee'
+import { useEffect, useState, type CSSProperties } from 'react'
 import styles from './Partner.module.css'
 
 export const Partner = () => {
@@ -64,19 +67,14 @@ export const Partner = () => {
     }))
   ]
 
-  const renderPartnerItem = (
-    item: PartnerItem,
-    suffix: string,
-    isHidden: boolean
-  ) => {
+  const renderPartnerItem = (item: PartnerItem, keySuffix: string) => {
     if (item.type === 'label') {
       const [firstLine, ...rest] = item.text.split(' ')
       const secondLine = rest.join(' ')
       return (
         <span
-          key={`${item.text}-${suffix}`}
+          key={`${item.text}-${keySuffix}`}
           className={styles.partnerLogoLabel}
-          aria-hidden={isHidden}
         >
           <span className={styles.partnerLogoLabelLine}>{firstLine}</span>
           <span className={styles.partnerLogoLabelLine}>{secondLine}</span>
@@ -86,7 +84,7 @@ export const Partner = () => {
 
     return (
       <Image
-        key={`${item.title}-${suffix}`}
+        key={`${item.title}-${keySuffix}`}
         width={180}
         height={60}
         className={styles.partnerLogoImage}
@@ -97,11 +95,26 @@ export const Partner = () => {
         }
         src={item.src}
         sizes="(max-width: 900px) 110px, (max-width: 1200px) 150px, 180px"
-        alt={isHidden ? '' : item.title}
-        aria-hidden={isHidden}
+        alt={item.title}
       />
     )
   }
+
+  const [reduceMotion, setReduceMotion] = useState(false)
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const handleChange = () => setReduceMotion(media.matches)
+    handleChange()
+
+    if (media.addEventListener) {
+      media.addEventListener('change', handleChange)
+      return () => media.removeEventListener('change', handleChange)
+    }
+
+    media.addListener(handleChange)
+    return () => media.removeListener(handleChange)
+  }, [])
 
   return (
     <section className={styles.partner}>
@@ -145,10 +158,18 @@ export const Partner = () => {
           <span className={styles.partnerSideRight} aria-hidden="true" />
           <div className={styles.partnerRow}>
             <div className={styles.partnerLogos}>
-              <div className={styles.partnerLogosTrack}>
-                {partnerLogos.map(item => renderPartnerItem(item, 'a', false))}
-                {partnerLogos.map(item => renderPartnerItem(item, 'b', true))}
-              </div>
+              <Marquee
+                className={styles.partnerMarquee}
+                autoFill
+                gradient={false}
+                pauseOnHover
+                speed={120}
+                play={!reduceMotion}
+              >
+                {partnerLogos.map((item, index) =>
+                  renderPartnerItem(item, String(index))
+                )}
+              </Marquee>
             </div>
           </div>
         </div>
