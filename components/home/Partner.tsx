@@ -4,8 +4,11 @@ import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 import { useEffect, useState, type CSSProperties } from 'react'
 import styles from './Partner.module.css'
+import { useTranslation } from '@/lib/i18n'
 
 export const Partner = () => {
+  const { t } = useTranslation()
+
   type PartnerItem =
     | { type: 'label'; text: string }
     | { type: 'logo'; title: string; src: string; logoHeight?: string }
@@ -74,17 +77,17 @@ export const Partner = () => {
   ]
 
   const partnerLogos: PartnerItem[] = [
-    { type: 'label', text: 'Technology Partners' },
+    { type: 'label', text: t('partner.labels.technology') },
     ...technologyPartners.map(partner => ({
       type: 'logo' as const,
       ...partner
     })),
-    { type: 'label', text: 'VC', ...VC },
+    { type: 'label', text: t('partner.labels.vc'), ...VC },
     ...VC.map(partner => ({
       type: 'logo' as const,
       ...partner
     })),
-    { type: 'label', text: 'Community Support' },
+    { type: 'label', text: t('partner.labels.community') },
     ...communitySupporters.map(partner => ({
       type: 'logo' as const,
       ...partner
@@ -198,7 +201,7 @@ export const Partner = () => {
           </div>
         </div>
 
-        <p className={styles.partnerTagline}>we got what you need</p>
+        <p className={styles.partnerTagline}>{t('partner.tagline')}</p>
       </div>
     </section>
   )

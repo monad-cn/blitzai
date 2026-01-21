@@ -1,9 +1,14 @@
+'use client'
+
 import Image from 'next/image'
 import styles from './HeroContainer.module.css'
 import { ArrowDown, ArrowUpLeft, ArrowUpRight, Plus, X } from 'lucide-react'
 import { Button } from 'antd'
+import { useTranslation } from '@/lib/i18n'
 
 export const HeroContainer = () => {
+  const { t } = useTranslation()
+
   return (
     <section className={styles.hero}>
       <div className={styles.hostRow}>
@@ -18,11 +23,11 @@ export const HeroContainer = () => {
       </div>
 
       <div className={styles.titleBlock}>
-        <p className={styles.title} data-text="Rebel in Paradise">
-          Rebel in Paradise
+        <p className={styles.title} data-text={t('hero.titleLine1')}>
+          {t('hero.titleLine1')}
         </p>
-        <p className={styles.title} data-text="AI Hackathon">
-          AI Hackathon
+        <p className={styles.title} data-text={t('hero.titleLine2')}>
+          {t('hero.titleLine2')}
         </p>
       </div>
 
@@ -38,7 +43,7 @@ export const HeroContainer = () => {
           </div>
         </div>
         <p className={styles.subtitle}>
-          Jan 19 - Feb 28, 2026 | Monad Blitz Pro Series
+          {t('hero.subtitle')}
         </p>
         <div className={`${styles.arrowCluster}`}>
           <div>
@@ -60,7 +65,7 @@ export const HeroContainer = () => {
           size="large"
           className={styles.ctaButton}
         >
-          <span className="font-bold">Register Now</span>
+          <span className="font-bold">{t('hero.registerCta')}</span>
         </Button>
         <div className="relative flex h-12 w-12 pt-[clamp(1.5rem,3vw,3.4rem)] items-center justify-center">
           <ArrowDown className="relative h-[2.2rem] w-[2.2rem] animate-bounce text-violet-200 drop-shadow-[0_0_16px_rgba(139,92,246,0.95)]" />

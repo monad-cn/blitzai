@@ -96,6 +96,45 @@
   gap: 2rem;
 }
 
+.languageSelectWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.languageIcon {
+  width: 1rem;
+  height: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+}
+
+.languageSelect {
+  min-width: 5rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  background: rgba(15, 10, 21, 0.75);
+  color: rgba(255, 255, 255, 0.9);
+  font: inherit;
+  appearance: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.languageSelect:hover {
+  border-color: rgba(168, 85, 247, 0.75);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.35);
+}
+
+.languageSelect:focus {
+  outline: none;
+  border-color: rgba(236, 72, 153, 0.85);
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.25);
+}
+
 .applyButton {
   color: white;
   font-weight: 600;

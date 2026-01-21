@@ -8,84 +8,72 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { HeroContainer } from '@/components/home/HeroContainer'
 import { Partner } from '@/components/home/Partner'
+import { useTranslation } from '@/lib/i18n'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useTranslation()
 
   const navItems = [
-    { label: 'HOME', href: '/' },
-    { label: 'TRACKS', href: '/tracks' },
-    { label: 'AGENDA', href: '/#agenda' },
-    { label: 'PRIZES', href: '/#prizes' }
+    { label: t('nav.home'), href: '/' },
+    { label: t('nav.tracks'), href: '/tracks' },
+    { label: t('nav.agenda'), href: '/#agenda' },
+    { label: t('nav.prizes'), href: '/#prizes' }
   ]
 
   const features = [
     {
-      title: 'USD $40,000',
-      description:
-        'Total prize pool: $20K cash + $20K in creative & resource rewards'
+      title: t('about.features.totalPrizeTitle'),
+      description: t('about.features.totalPrizeDescription')
     },
     {
-      title: '3 Tracks',
-      description:
-        'Agent-native Payments, Intelligent Markets, Agent-powered Apps'
+      title: t('about.features.tracksTitle'),
+      description: t('about.features.tracksDescription')
     },
     {
-      title: 'Hybrid Format',
-      description: '1-month mentorship + Beijing/Shenzhen Hacker Camps'
+      title: t('about.features.formatTitle'),
+      description: t('about.features.formatDescription')
     }
   ]
 
   const agendaItems = [
     {
-      title: 'Hands-on Hacking Environment',
-      description:
-        'We create a developer-friendly, on-site space for building, collaborating, and connecting. Come to code, meet peers, and form ideas together in a setting designed for creativity and flow.'
+      title: t('agenda.items.handsOnTitle'),
+      description: t('agenda.items.handsOnDescription')
     },
     {
-      title: 'Industry Insight',
-      description:
-        'Learn directly from industry leaders and VCs across LLMs, infrastructure, and agents. Explore real edge cases and the intersections between AI and crypto with people shaping the frontier.'
+      title: t('agenda.items.insightTitle'),
+      description: t('agenda.items.insightDescription')
     },
     {
-      title: 'Lightning Pitches',
-      description:
-        'Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time.'
+      title: t('agenda.items.pitchesTitle'),
+      description: t('agenda.items.pitchesDescription')
     }
   ]
   const faqItems = [
     {
-      question:
-        'Can I join this hackathon fully online? Is it okay to skip the offline events?',
-      answer: 'Yes.'
+      question: t('faq.items.q1'),
+      answer: t('faq.items.a1')
     },
     {
-      question:
-        'Are there any requirements to register? (Can I join without a project or idea?)',
-      answer:
-        'There are no requirements for the offline events, but the online hackathon requires a final project submission.'
+      question: t('faq.items.q2'),
+      answer: t('faq.items.a2')
     },
     {
-      question:
-        'Will applications be reviewed after registering? Is it based on the information submitted?',
-      answer: 'Yes, a review is required.'
+      question: t('faq.items.q3'),
+      answer: t('faq.items.a3')
     },
     {
-      question: 'For teams, do we form our own teams or get randomly assigned?',
-      answer:
-        'You form your own team, and you can also recruit teammates in the hackathon community.'
+      question: t('faq.items.q4'),
+      answer: t('faq.items.a4')
     },
     {
-      question:
-        'What format is the online mentoring? One-on-one? Do we need to book in advance?',
-      answer:
-        'You need to submit a booking request; a reservation link will be shared.'
+      question: t('faq.items.q5'),
+      answer: t('faq.items.a5')
     },
     {
-      question:
-        'Will there be a judging session for the demo pitches at Hacker Camp?',
-      answer:
-        'No judging, but you can join the lightning talks as a demo rehearsal.'
+      question: t('faq.items.q6'),
+      answer: t('faq.items.a6')
     }
   ]
 
@@ -108,13 +96,11 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.headerContent}>
             <h2 className={styles.aboutTitle}>
-              The Variables Are Changing Simultaneously
+              {t('about.title')}
             </h2>
 
             <p className={styles.aboutDescription}>
-              In an era where Agents become execution entities and blockchain
-              becomes the economic foundation, which directions are most worth
-              exploring? Rebel in Paradise addresses this question head-on.
+              {t('about.description')}
             </p>
           </div>
 
@@ -136,11 +122,11 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.agendaHeader}>
             <h2 className={styles.agendaTitle}>
-              Hacker <span className={styles.accent}>Camp</span>
+              {t('agenda.titleLead')}{' '}
+              <span className={styles.accent}>{t('agenda.titleAccent')}</span>
             </h2>
             <p className={styles.agendaSubtitle}>
-              Join our full-day developer events in Beijing (Jan 31) and
-              Shenzhen (Feb 7), featuring workshops, panels, and networking
+              {t('agenda.subtitle')}
             </p>
           </div>
           <div className={styles.agendaActions}>
@@ -150,7 +136,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Beijing
+              {t('agenda.city.beijing')}
             </a>
             <a
               className={styles.agendaButton}
@@ -158,7 +144,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Shenzhen
+              {t('agenda.city.shenzhen')}
             </a>
           </div>
 
@@ -182,11 +168,10 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.prizesHeader}>
             <h2 className={styles.prizesTitle}>
-              <span className={styles.accent}>Prizes & Awards</span>
+              <span className={styles.accent}>{t('prizes.title')}</span>
             </h2>
             <p className={styles.prizesSubtitle}>
-              We expect 40-50 project submissions, with 7 teams selected as
-              award winners.
+              {t('prizes.subtitle')}
             </p>
           </div>
 
@@ -194,50 +179,62 @@ export default function Home() {
             <div className={styles.prizeCard}>
               <div className={styles.cardContent}>
                 <div>
-                  <h3 className={styles.cardTitle}>Cash Prizes (USD 20,000)</h3>
+                  <h3 className={styles.cardTitle}>{t('prizes.cashTitle')}</h3>
                   <p className={styles.cardDescription}>
-                    Cash prizes are structured across three tracks, with 1st and
-                    2nd place awards for each track, plus one Grand Prize
-                    selected from all winning projects.
+                    {t('prizes.cashDescription')}
                   </p>
                 </div>
 
                 <div className={styles.prizeDetails}>
                   <div className={styles.prizeRow}>
                     <div className={styles.prizeMeta}>
-                      <span className={styles.prizeLabel}>Grand Prize</span>
-                      <span className={styles.trackBadge}>1 team</span>
+                      <span className={styles.prizeLabel}>
+                        {t('prizes.grandPrize')}
+                      </span>
+                      <span className={styles.trackBadge}>
+                        {t('prizes.teamCount')}
+                      </span>
                     </div>
-                    <span className={styles.prizeAmount}>$5,000</span>
+                    <span className={styles.prizeAmount}>
+                      {t('prizes.grandPrizeAmount')}
+                    </span>
                   </div>
 
                   <div className={styles.trackAwards}>
                     <p className={styles.trackLabel}>
-                      Track Awards (per track):
+                      {t('prizes.trackAwardsLabel')}
                     </p>
                     <div className={styles.prizeRow}>
                       <div className={styles.prizeMeta}>
-                        <span className={styles.prizeLabel}>1st Place</span>
+                        <span className={styles.prizeLabel}>
+                          {t('prizes.firstPlace')}
+                        </span>
                         <span className={styles.trackBadge}>
-                          3 teams, 1 per track
+                          {t('prizes.trackTeamCount')}
                         </span>
                       </div>
-                      <span className={styles.prizeAmount}>$3,000 × 3</span>
+                      <span className={styles.prizeAmount}>
+                        {t('prizes.firstPlaceAmount')}
+                      </span>
                     </div>
                     <div className={styles.prizeRow}>
                       <div className={styles.prizeMeta}>
-                        <span className={styles.prizeLabel}>2nd Place</span>
+                        <span className={styles.prizeLabel}>
+                          {t('prizes.secondPlace')}
+                        </span>
                         <span className={styles.trackBadge}>
-                          3 teams, 1 per track
+                          {t('prizes.trackTeamCount')}
                         </span>
                       </div>
-                      <span className={styles.prizeAmount}>$2,000 × 3</span>
+                      <span className={styles.prizeAmount}>
+                        {t('prizes.secondPlaceAmount')}
+                      </span>
                     </div>
                   </div>
 
                   <div className={styles.prizeTotal}>
                     <p className={styles.totalText}>
-                      Total cash prizes: USD 20,000 distributed among 7 teams.
+                      {t('prizes.totalCashNote')}
                     </p>
                   </div>
                 </div>
@@ -248,11 +245,10 @@ export default function Home() {
               <div className={styles.cardContent}>
                 <div>
                   <h3 className={styles.cardTitle}>
-                    Creative & Resource Awards (USD 20,000)
+                    {t('prizes.resourceTitle')}
                   </h3>
                   <p className={styles.cardDescription}>
-                    Beyond cash prizes, we collaborate with partners to provide
-                    high-value creative and resource awards:
+                    {t('prizes.resourceDescription')}
                   </p>
                 </div>
 
@@ -260,31 +256,28 @@ export default function Home() {
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                      NVIDIA DGX Spark AI Supercomputer on your desk
+                      {t('prizes.resourceItems.nvidia')}
                     </p>
                   </div>
 
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                      Free trial credits for cutting-edge models, developer
-                      tools, and infrastructure
+                      {t('prizes.resourceItems.credits')}
                     </p>
                   </div>
 
                   <div className={styles.resourceItem}>
                     <span className={styles.bullet}>•</span>
                     <p className={styles.resourceText}>
-                      Top Tech Company Access including office tours and
-                      internships
+                      {t('prizes.resourceItems.access')}
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.resourceNote}>
                   <p className={styles.noteText}>
-                    Select partner companies will also provide special awards
-                    and resources for outstanding projects.
+                    {t('prizes.resourceNote')}
                   </p>
                 </div>
               </div>
@@ -306,9 +299,9 @@ export default function Home() {
         <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-6">
           <div className="mb-10 flex flex-col items-center gap-3 text-center">
             <h2 className="text-4xl font-semibold text-transparent bg-gradient-to-r from-purple-200 via-fuchsia-300 to-indigo-200 bg-clip-text md:text-5xl">
-              Q&A
+              {t('faq.title')}
             </h2>
-            <p>Common questions about registration,review,teaming,and online mentoring.</p>
+            <p>{t('faq.subtitle')}</p>
           </div>
           <div className="mx-auto flex w-full max-w-4xl flex-col gap-3 text-left">
             {faqItems.map(item => (
@@ -319,7 +312,7 @@ export default function Home() {
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-white">
                   <span className="flex items-center gap-3">
                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-purple-300/20 text-xs font-semibold leading-none text-purple-100">
-                      Q
+                      {t('faq.badge.q')}
                     </span>
                     {item.question}
                   </span>
@@ -329,7 +322,7 @@ export default function Home() {
                 </summary>
                 <div className="mt-4 flex items-start gap-3 text-sm leading-relaxed text-white/75">
                   <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-purple-200/40 text-xs font-semibold leading-none text-purple-100">
-                    A
+                    {t('faq.badge.a')}
                   </span>
                   <p>{item.answer}</p>
                 </div>
@@ -348,13 +341,12 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Ready to Explore
+              {t('cta.titleLine1')}
               <br />
-              <span className={styles.accent}>the Age of Agents?</span>
+              <span className={styles.accent}>{t('cta.titleLine2')}</span>
             </h2>
             <p className={styles.ctaSubtitle}>
-              Join developers and innovators from around the world to build the
-              future. Limited spots available, first come first served.
+              {t('cta.subtitle')}
             </p>
             <div className={styles.ctaActions}>
               <div className={styles.ctaAction}>
@@ -367,11 +359,11 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Register Now
+                    {t('cta.registerCta')}
                   </Button>
                 </div>
                 <p className={styles.ctaNote}>
-                  Register opens Jan 19 00:00 UTC+8
+                  {t('cta.registerNote')}
                 </p>
               </div>
               <div className={styles.ctaAction}>
@@ -381,11 +373,11 @@ export default function Home() {
                     size="large"
                     className={styles.ctaButtonSecondary}
                   >
-                    Submit
+                    {t('cta.submitCta')}
                   </Button>
                 </div>
                 <p className={styles.ctaNote}>
-                  Submit closes Feb 28 23:59 UTC+8
+                  {t('cta.submitNote')}
                 </p>
               </div>
             </div>
