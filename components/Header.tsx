@@ -90,9 +90,7 @@ export function Header() {
                 <Globe className={styles.languageIcon} aria-hidden="true" />
               </Dropdown>
             </div>
-            {/* <Link href="/#register" className={styles.applyButton}>
-             APPLY
-            </Link>  */}
+          
           </div>
 
           <button
@@ -120,13 +118,7 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/#register"
-              className={styles.mobileApplyButton}
-              onClick={() => setIsOpen(false)}
-            >
-              {t('nav.apply')}
-            </Link>
+           
             <div className={styles.languageSelectWrapper}>
               <Dropdown
                 menu={{

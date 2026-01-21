@@ -273,6 +273,38 @@
   }
 }
 
+@media (max-width: 768px) {
+  .partner {
+    padding: 0 1.25rem 6rem;
+  }
+
+  .partnerCharacters {
+    display: none;
+  }
+
+  .partnerBlock {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .partnerBlock::before {
+    border-radius: 24px;
+  }
+
+  .partnerRow {
+    padding-left: 0;
+  }
+
+  .partnerLogos {
+    font-size: 0.85rem;
+  }
+
+  .partnerTagline {
+    margin-top: 3rem;
+    letter-spacing: 0.12em;
+  }
+}
+
 @media (max-width: 1600px) {
   .partner {
     padding: 0 6rem 8rem;

@@ -215,3 +215,36 @@
     display: none;
   }
 }
+
+@media (max-width: 640px) {
+  .navContainer {
+    padding: 0 0.75rem;
+  }
+
+  .navWrapper {
+    height: 3.5rem;
+  }
+
+  .logo {
+    left: 0;
+    gap: 0.35rem;
+  }
+
+  .logo img {
+    height: 2rem;
+    width: auto;
+  }
+
+  .logoSecondary {
+    display: none;
+    padding-left: 0;
+  }
+
+  .mobileNav {
+    padding: 0.75rem 0;
+  }
+
+  .mobileNavLink {
+    padding: 0.6rem 0;
+  }
+}
