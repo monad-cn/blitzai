@@ -176,6 +176,14 @@
       "vc": "投资机构",
       "community": "社区支持"
     },
+    "mobileLabels": {
+      "host": "主办方",
+      "cohost": "联合主办",
+      "technologySupport": "技术支持",
+      "vc": "投资机构",
+      "communitySupport": "社区支持",
+      "incubationSupport": "孵化支持"
+    },
     "tagline": "构建所需，全部就绪"
   },
   "footer": {

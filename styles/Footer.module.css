@@ -130,7 +130,29 @@
 
 @media (max-width: 768px) {
   .footerGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .brandDesc {
+    font-size: 0.95rem;
+  }
+
+  .copyright {
+    padding: 1.5rem 0.75rem;
   }
 }

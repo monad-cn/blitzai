@@ -11,7 +11,6 @@ import { useTranslation } from '@/lib/i18n'
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const { t, i18n } = useTranslation()
-  const isZh = i18n.language?.toLowerCase().startsWith('zh')
 
   const handleLanguageChange = (next: string) => {
     if (i18n.language !== next) {
@@ -90,20 +89,30 @@ export function Header() {
                 <Globe className={styles.languageIcon} aria-hidden="true" />
               </Dropdown>
             </div>
-            {/* <Link href="/#register" className={styles.applyButton}>
-             APPLY
-            </Link>  */}
           </div>
 
           <button
             className={styles.mobileMenuButton}
-            onClick={() => setIsOpen(!isOpen)}
             aria-label={t('nav.toggleMenu')}
           >
             {isOpen ? (
-              <X className={styles.menuIcon} />
+              <X
+                className={styles.menuIcon}
+                onClick={() => setIsOpen(!isOpen)}
+              />
             ) : (
-              <Menu className={styles.menuIcon} />
+              <div className="flex items-center">
+                <Dropdown
+                  menu={{
+                    items: languageItems,
+                    onClick: ({ key }) => handleLanguageChange(key)
+                  }}
+                  trigger={['click']}
+                >
+                  <Globe className={`pr-1 w-6 text-white`} aria-hidden="true" />
+                </Dropdown>
+                <Menu className={styles.menuIcon}  onClick={() => setIsOpen(!isOpen)} />
+              </div>
             )}
           </button>
         </div>
@@ -120,24 +129,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/#register"
-              className={styles.mobileApplyButton}
-              onClick={() => setIsOpen(false)}
-            >
-              {t('nav.apply')}
-            </Link>
-            <div className={styles.languageSelectWrapper}>
-              <Dropdown
-                menu={{
-                  items: languageItems,
-                  onClick: ({ key }) => handleLanguageChange(key)
-                }}
-                trigger={['click']}
-              >
-                <Globe className={styles.languageIcon} aria-hidden="true" />
-              </Dropdown>
-            </div>
           </div>
         )}
       </div>

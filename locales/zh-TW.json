@@ -176,6 +176,14 @@
       "vc": "投資機構",
       "community": "社群支持"
     },
+    "mobileLabels": {
+      "host": "主辦方",
+      "cohost": "聯合主辦",
+      "technologySupport": "技術支持",
+      "vc": "投資機構",
+      "communitySupport": "社群支持",
+      "incubationSupport": "孵化支持"
+    },
     "tagline": "構建所需，全部就緒"
   },
   "footer": {

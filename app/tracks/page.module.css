@@ -4,11 +4,11 @@
 }
 
 .content {
-  padding-top: 8rem;
+  padding-top: clamp(5rem, 10vw, 8rem);
 }
 
 .section {
-  padding: 4rem 0 10rem;
+  padding: clamp(3rem, 8vw, 4rem) 0 clamp(5rem, 10vw, 10rem);
   background: white;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
   font-weight: bold;
   line-height: 1.1;
   color: black;
@@ -37,7 +37,7 @@
 }
 
 .subtitle {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   color: black;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .trackCard {
-  padding: 2.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
   background: white;
   border-radius: 1rem;
   border: 1px solid #e5e7eb;
@@ -80,7 +80,7 @@
 }
 
 .trackNumber {
-  font-size: 3.75rem;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
   font-weight: bold;
   color: #8b5cf6;
 }
@@ -90,14 +90,14 @@
 }
 
 .trackTitle {
-  font-size: 1.875rem;
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
   font-weight: bold;
   color: black;
   margin-bottom: 0.5rem;
 }
 
 .trackSubtitle {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   color: black;
   font-weight: 500;
 }
@@ -142,7 +142,7 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 7vw, 2.5rem);
   }
 
   .trackNumber {
@@ -151,5 +151,20 @@
 
   .trackTitle {
     font-size: 1.5rem;
+  }
+
+  .trackHeaderInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trackSections {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding-top: 5rem;
   }
 }

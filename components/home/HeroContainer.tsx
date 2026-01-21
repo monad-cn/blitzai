@@ -1,6 +1,5 @@
 'use client'
-
-import Image from 'next/image'
+ 
 import styles from './HeroContainer.module.css'
 import { ArrowDown, ArrowUpLeft, ArrowUpRight, Plus, X } from 'lucide-react'
 import { Button } from 'antd'
@@ -8,6 +7,10 @@ import { useTranslation } from '@/lib/i18n'
 
 export const HeroContainer = () => {
   const { t } = useTranslation()
+  const subtitleText = t('hero.subtitle')
+  const subtitleParts = subtitleText.split(' | ')
+  const subtitleLeft = subtitleParts[0] ?? subtitleText
+  const subtitleRight = subtitleParts[1]
 
   return (
     <section className={styles.hero}>
@@ -43,7 +46,13 @@ export const HeroContainer = () => {
           </div>
         </div>
         <p className={styles.subtitle}>
-          {t('hero.subtitle')}
+          <span className={styles.subtitleLine}>{subtitleLeft}</span>
+          {subtitleRight ? (
+            <>
+              <span className={styles.subtitleSeparator}> | </span>
+              <span className={styles.subtitleLine}>{subtitleRight}</span>
+            </>
+          ) : null}
         </p>
         <div className={`${styles.arrowCluster}`}>
           <div>

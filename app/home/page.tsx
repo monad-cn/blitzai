@@ -8,6 +8,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { HeroContainer } from '@/components/home/HeroContainer'
 import { Partner } from '@/components/home/Partner'
+import { PartnerMobile } from '@/components/home/PartnerMobile'
 import { useTranslation } from '@/lib/i18n'
 
 export default function Home() {
@@ -91,7 +92,12 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className={styles.aboutSection}>
         <section className={styles.partnerContainer}>
-          <Partner />
+          <div className={styles.partnerDesktop}>
+            <Partner />
+          </div>
+          <div className={styles.partnerMobile}>
+            <PartnerMobile />
+          </div>
         </section>
         <div className={styles.container}>
           <div className={styles.headerContent}>

@@ -176,6 +176,14 @@
       "vc": "VC",
       "community": "Community Support"
     },
+    "mobileLabels": {
+      "host": "Host",
+      "cohost": "Co-host",
+      "technologySupport": "Technology Support",
+      "vc": "VC",
+      "communitySupport": "Community Support",
+      "incubationSupport": "Incubation Support"
+    },
     "tagline": "We have what you need"
   },
   "footer": {
