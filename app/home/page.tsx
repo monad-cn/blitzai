@@ -1,5 +1,5 @@
 'use client'
-import { Menu, X } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 import { Button } from 'antd'
@@ -51,6 +51,41 @@ export default function Home() {
       title: 'Lightning Pitches',
       description:
         'Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time.'
+    }
+  ]
+  const faqItems = [
+    {
+      question:
+        'Can I join this hackathon fully online? Is it okay to skip the offline events?',
+      answer: 'Yes.'
+    },
+    {
+      question:
+        'Are there any requirements to register? (Can I join without a project or idea?)',
+      answer:
+        'There are no requirements for the offline events, but the online hackathon requires a final project submission.'
+    },
+    {
+      question:
+        'Will applications be reviewed after registering? Is it based on the information submitted?',
+      answer: 'Yes, a review is required.'
+    },
+    {
+      question: 'For teams, do we form our own teams or get randomly assigned?',
+      answer:
+        'You form your own team, and you can also recruit teammates in the hackathon community.'
+    },
+    {
+      question:
+        'What format is the online mentoring? One-on-one? Do we need to book in advance?',
+      answer:
+        'You need to submit a booking request; a reservation link will be shared.'
+    },
+    {
+      question:
+        'Will there be a judging session for the demo pitches at Hacker Camp?',
+      answer:
+        'No judging, but you can join the lightning talks as a demo rehearsal.'
     }
   ]
 
@@ -254,6 +289,52 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Q&A Section */}
+      <section
+        id="q&a"
+        className="relative overflow-hidden  py-16 text-white"
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#7c3aed]/30 blur-[120px]" />
+          <div className="absolute right-12 top-24 h-56 w-56 rounded-full bg-[#c084fc]/25 blur-[110px]" />
+          <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#4f46e5]/25 blur-[140px]" />
+        </div>
+        <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-6">
+          <div className="mb-10 flex flex-col items-center gap-3 text-center">
+            <h2 className="text-4xl font-semibold text-transparent bg-gradient-to-r from-purple-200 via-fuchsia-300 to-indigo-200 bg-clip-text md:text-5xl">
+              Q&A
+            </h2>
+            <p>Common questions about registration,review,teaming,and online mentoring.</p>
+          </div>
+          <div className="mx-auto flex w-full max-w-4xl flex-col gap-3 text-left">
+            {faqItems.map(item => (
+              <details
+                key={item.question}
+                className="bg-[#0b0a1a] group rounded-2xl border border-white/10 bg-gradient-to-br from-purple-400/10 via-white/5 to-transparent p-5 shadow-[0_20px_60px_-48px_rgba(20,10,40,0.9)] transition hover:border-purple-200/40 hover:from-purple-400/20"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-white">
+                  <span className="flex items-center gap-3">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-purple-300/20 text-xs font-semibold leading-none text-purple-100">
+                      Q
+                    </span>
+                    {item.question}
+                  </span>
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-purple-200/30 text-purple-100 transition group-open:rotate-180">
+                    <ChevronDown className="h-4 w-4" />
+                  </span>
+                </summary>
+                <div className="mt-4 flex items-start gap-3 text-sm leading-relaxed text-white/75">
+                  <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-purple-200/40 text-xs font-semibold leading-none text-purple-100">
+                    A
+                  </span>
+                  <p>{item.answer}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

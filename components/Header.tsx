@@ -10,7 +10,8 @@ const navItems = [
   { label: 'HOME', href: '/' },
   { label: 'TRACKS', href: '/tracks' },
   { label: 'AGENDA', href: '/#agenda' },
-  { label: 'PRIZES', href: '/#prizes' }
+  { label: 'PRIZES', href: '/#prizes' },
+  { label: 'Q&A', href: '/#q&a' }
 ]
 
 export function Header() {
