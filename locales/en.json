@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "home": "HOME",
+    "tracks": "TRACKS",
+    "agenda": "AGENDA",
+    "prizes": "PRIZES",
+    "qa": "Q&A",
+    "apply": "APPLY",
+    "toggleMenu": "Toggle menu"
+  },
+  "header": {
+    "logoAltPrimary": "MONAD Logo",
+    "logoAltSecondary": "Segmentault Logo"
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文",
+    "selectLabel": "Select language",
+    "switchToEn": "Switch to English",
+    "switchToZh": "Switch to Chinese"
+  },
+  "hero": {
+    "titleLine1": "Rebel in Paradise",
+    "titleLine2": "AI Hackathon",
+    "subtitle": "Jan 19 - Feb 28, 2026 | Monad Blitz Pro Series",
+    "registerCta": "Register Now"
+  },
+  "about": {
+    "title": "The Variables Are Changing Simultaneously",
+    "description": "In an era where Agents become execution entities and blockchain becomes the economic foundation, which directions are most worth exploring? Rebel in Paradise addresses this question head-on.",
+    "features": {
+      "totalPrizeTitle": "USD $40,000",
+      "totalPrizeDescription": "Total prize pool: $20K cash + $20K in creative & resource rewards",
+      "tracksTitle": "3 Tracks",
+      "tracksDescription": "Agent-native Payments, Intelligent Markets, Agent-powered Apps",
+      "formatTitle": "Hybrid Format",
+      "formatDescription": "1-month mentorship + Beijing/Shenzhen Hacker Camps"
+    }
+  },
+  "agenda": {
+    "titleLead": "Hacker",
+    "titleAccent": "Camp",
+    "subtitle": "Join our full-day developer events in Beijing (Jan 31) and Shenzhen (Feb 7), featuring workshops, panels, and networking",
+    "city": {
+      "beijing": "Beijing",
+      "shenzhen": "Shenzhen"
+    },
+    "items": {
+      "handsOnTitle": "Hands-on Hacking Environment",
+      "handsOnDescription": "We create a developer-friendly, on-site space for building, collaborating, and connecting. Come to code, meet peers, and form ideas together in a setting designed for creativity and flow.",
+      "insightTitle": "Industry Insight",
+      "insightDescription": "Learn directly from industry leaders and VCs across LLMs, infrastructure, and agents. Explore real edge cases and the intersections between AI and crypto with people shaping the frontier.",
+      "pitchesTitle": "Lightning Pitches",
+      "pitchesDescription": "Step on stage and present your project freely. No scripts, no pre-assigned teams. Share your ideas, engage your audience, and spark conversations with fellow builders in real time."
+    }
+  },
+  "prizes": {
+    "title": "Prizes & Awards",
+    "subtitle": "We expect 40-50 project submissions, with 7 teams selected as award winners.",
+    "cashTitle": "Cash Prizes (USD 20,000)",
+    "cashDescription": "Cash prizes are structured across three tracks, with 1st and 2nd place awards for each track, plus one Grand Prize selected from all winning projects.",
+    "grandPrize": "Grand Prize",
+    "teamCount": "1 team",
+    "trackAwardsLabel": "Track Awards (per track):",
+    "firstPlace": "1st Place",
+    "secondPlace": "2nd Place",
+    "trackTeamCount": "3 teams, 1 per track",
+    "grandPrizeAmount": "$5,000",
+    "firstPlaceAmount": "$3,000 × 3",
+    "secondPlaceAmount": "$2,000 × 3",
+    "totalCashNote": "Total cash prizes: USD 20,000 distributed among 7 teams.",
+    "resourceTitle": "Creative & Resource Awards (USD 20,000)",
+    "resourceDescription": "Beyond cash prizes, we collaborate with partners to provide high-value creative and resource awards:",
+    "resourceItems": {
+      "nvidia": "NVIDIA DGX Spark AI Supercomputer on your desk",
+      "credits": "Free trial credits for cutting-edge models, developer tools, and infrastructure",
+      "access": "Top Tech Company Access including office tours and internships"
+    },
+    "resourceNote": "Select partner companies will also provide special awards and resources for outstanding projects."
+  },
+  "tracksPage": {
+    "title": "Tracks",
+    "titleAccent": "Which Directions Are Worth Exploring",
+    "subtitle": "Choose a track and build the future",
+    "sectionProblems": "Problems this track aims to solve:",
+    "sectionBuilds": "What we hope to see built:",
+    "tracks": {
+      "track1": {
+        "title": "Track 1: Agent-native Payments & Infrastructure",
+        "subtitle": "Native capabilities emerging from 'how services are deployed and monetized'",
+        "description": "In the era of Agents and Vibe coding, service supply is rapidly growing. Whether for consumer-facing 2C products or domain-specific 2B/professional services, the most applicable and lowest-friction commercialization path is becoming: deploy on-chain and use the chain as the settlement layer.",
+        "problems": {
+          "p1": "Can any AI service use on-chain settlement as the default billing method?",
+          "p2": "How can Agents discover services and complete subscriptions or pay-per-use transactions?",
+          "p3": "Can payment/trading/investment be encapsulated as directly callable agent capabilities?"
+        },
+        "builds": {
+          "b1": "AI services using blockchain as settlement layer (2C or 2B)",
+          "b2": "Agent-callable payment, subscription and settlement protocols",
+          "b3": "Payment middleware inspired by x402/facilitator",
+          "b4": "Modular trading, investment, and settlement agentic infrastructure"
+        }
+      },
+      "track2": {
+        "title": "Track 2: Living with Agents & Intelligent Markets",
+        "subtitle": "How smarter Agent commerce truly takes off",
+        "description": "Future agents must be highly personalized, executable, and collaborative. Agent intelligence depends not just on model capabilities, but on the context they're given, stable and developable workflows, and execution ability within real systems.",
+        "problems": {
+          "p1": "How can Agents acquire long-term, massive, and effective context? What are the best entry points?",
+          "p2": "How to design agent workflows and execution flows, not just conversations?",
+          "p3": "How can data, perception, execution and incentives work together so agents truly generate value?",
+          "p4": "In crypto and native digital environments, how can agents better complete transactions, decisions and collaboration?"
+        },
+        "builds": {
+          "b1": "Highly personalized, long-running agents or robots",
+          "b2": "Context acquisition, management and update solutions for specific scenarios",
+          "b3": "Agent workflows with strong execution capabilities (not just chat)",
+          "b4": "Data collection, feedback and incentive mechanisms around agent intelligence",
+          "b5": "AI-driven crypto-native products (smarter wallets, browsers, trading or research tools)"
+        }
+      },
+      "track3": {
+        "title": "Track 3: Agent-powered Applications",
+        "subtitle": "When Agents themselves become the core of products and entertainment",
+        "description": "When Agents are sufficiently autonomous and intelligent, they can become the core of products. In some scenarios, watching Agents compete and cooperate is itself a strong user experience and business model. Making Agent decision logic public or competitive on-chain can achieve high-discreteness data verifiability, reduce oracle risk, and enable low-threshold, gasless user participation.",
+        "problems": {
+          "p1": "How can Agent confrontation, competition and collaboration become application forms?",
+          "p2": "How to combine Agent behavior with prediction markets, betting or similar mechanisms?",
+          "p3": "In trustless third-party scenarios, how to ensure Agent behavior and outcome verifiability?",
+          "p4": "In crypto native environments, how can agents better complete transactions, decisions and collaboration?"
+        },
+        "builds": {
+          "b1": "Agent-vs-Agent games or simulation systems (Poker, Chess, MOBA, etc.)",
+          "b2": "Agent competition platforms deeply integrated with prediction markets",
+          "b3": "Short, high-frequency round simulation or competition environments (5-10 minutes)",
+          "b4": "Public or on-chain Agent decision logic achieving high-discreteness data verifiability, reducing oracle risk",
+          "b5": "Low-threshold, gasless user participation (like Arcade Tokens) for observation, interaction or betting goals"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Q&A",
+    "subtitle": "Common questions about registration, review, teaming, and online mentoring.",
+    "badge": {
+      "q": "Q",
+      "a": "A"
+    },
+    "items": {
+      "q1": "Can I join this hackathon fully online? Is it okay to skip the offline events?",
+      "a1": "Yes.",
+      "q2": "Are there any requirements to register? (Can I join without a project or idea?)",
+      "a2": "There are no requirements for the offline events, but the online hackathon requires a final project submission.",
+      "q3": "Will applications be reviewed after registering? Is it based on the information submitted?",
+      "a3": "Yes, a review is required.",
+      "q4": "For teams, do we form our own teams or get randomly assigned?",
+      "a4": "You form your own team, and you can also recruit teammates in the hackathon community.",
+      "q5": "What format is the online mentoring? One-on-one? Do we need to book in advance?",
+      "a5": "You need to submit a booking request; a reservation link will be shared.",
+      "q6": "Will there be a judging session for the demo pitches at Hacker Camp?",
+      "a6": "No judging, but you can join the lightning talks as a demo rehearsal."
+    }
+  },
+  "cta": {
+    "titleLine1": "Ready to Explore",
+    "titleLine2": "the Age of Agents?",
+    "subtitle": "Join developers and innovators from around the world to build the future. Limited spots available, first come first served.",
+    "registerCta": "Register Now",
+    "registerNote": "Register opens Jan 19 00:00 UTC+8",
+    "submitCta": "Submit",
+    "submitNote": "Submit closes Feb 28 23:59 UTC+8"
+  },
+  "partner": {
+    "labels": {
+      "technology": "Technology Partners",
+      "vc": "VC",
+      "community": "Community Support"
+    },
+    "tagline": "We have what you need"
+  },
+  "footer": {
+    "brandName": "MONAD",
+    "description": "The premier AI hackathon on Monad - where high-performance blockchain meets cutting-edge artificial intelligence.",
+    "categories": {
+      "resources": "Resources",
+      "event": "Event"
+    },
+    "links": {
+      "documentation": "Documentation",
+      "github": "GitHub",
+      "discord": "Discord",
+      "twitter": "Twitter",
+      "agenda": "Agenda",
+      "tracks": "Tracks",
+      "prizes": "Prizes",
+      "register": "Register"
+    },
+    "copyright": "© 2026 Monad Blitz Pro. All rights reserved."
+  }
+}

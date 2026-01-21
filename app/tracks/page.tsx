@@ -1,62 +1,64 @@
+'use client'
+
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import styles from "./page.module.css"
+import { useTranslation } from "@/lib/i18n"
 
 export default function Tracks() {
+  const { t } = useTranslation()
+
   const tracks = [
     {
-      title: "Track 1: Agent-native Payments & Infrastructure",
-      subtitle: "Native capabilities emerging from 'how services are deployed and monetized'",
-      description:
-        "In the era of Agents and Vibe coding, service supply is rapidly growing. Whether for consumer-facing 2C products or domain-specific 2B/professional services, the most applicable and lowest-friction commercialization path is becoming: deploy on-chain and use the chain as the settlement layer.",
+      title: t("tracksPage.tracks.track1.title"),
+      subtitle: t("tracksPage.tracks.track1.subtitle"),
+      description: t("tracksPage.tracks.track1.description"),
       problems: [
-        "Can any AI service use on-chain settlement as the default billing method?",
-        "How can Agents discover services and complete subscriptions or pay-per-use transactions?",
-        "Can payment/trading/investment be encapsulated as directly callable agent capabilities?",
+        t("tracksPage.tracks.track1.problems.p1"),
+        t("tracksPage.tracks.track1.problems.p2"),
+        t("tracksPage.tracks.track1.problems.p3"),
       ],
       builds: [
-        "AI services using blockchain as settlement layer (2C or 2B)",
-        "Agent-callable payment, subscription and settlement protocols",
-        "Payment middleware inspired by x402/facilitator",
-        "Modular trading, investment, and settlement agentic infrastructure",
+        t("tracksPage.tracks.track1.builds.b1"),
+        t("tracksPage.tracks.track1.builds.b2"),
+        t("tracksPage.tracks.track1.builds.b3"),
+        t("tracksPage.tracks.track1.builds.b4"),
       ],
     },
     {
-      title: "Track 2: Living with Agents & Intelligent Markets",
-      subtitle: "How smarter Agent commerce truly takes off",
-      description:
-        "Future agents must be highly personalized, executable, and collaborative. Agent intelligence depends not just on model capabilities, but on the context they're given, stable and developable workflows, and execution ability within real systems.",
+      title: t("tracksPage.tracks.track2.title"),
+      subtitle: t("tracksPage.tracks.track2.subtitle"),
+      description: t("tracksPage.tracks.track2.description"),
       problems: [
-        "How can Agents acquire long-term, massive, and effective context? What are the best entry points?",
-        "How to design agent workflows and execution flows, not just conversations?",
-        "How can data, perception, execution and incentives work together so agents truly generate value?",
-        "In crypto and native digital environments, how can agents better complete transactions, decisions and collaboration?",
+        t("tracksPage.tracks.track2.problems.p1"),
+        t("tracksPage.tracks.track2.problems.p2"),
+        t("tracksPage.tracks.track2.problems.p3"),
+        t("tracksPage.tracks.track2.problems.p4"),
       ],
       builds: [
-        "Highly personalized, long-running agents or robots",
-        "Context acquisition, management and update solutions for specific scenarios",
-        "Agent workflows with strong execution capabilities (not just chat)",
-        "Data collection, feedback and incentive mechanisms around agent intelligence",
-        "AI-driven crypto-native products (smarter wallets, browsers, trading or research tools)",
+        t("tracksPage.tracks.track2.builds.b1"),
+        t("tracksPage.tracks.track2.builds.b2"),
+        t("tracksPage.tracks.track2.builds.b3"),
+        t("tracksPage.tracks.track2.builds.b4"),
+        t("tracksPage.tracks.track2.builds.b5"),
       ],
     },
     {
-      title: "Track 3: Agent-powered Applications",
-      subtitle: "When Agents themselves become the core of products and entertainment",
-      description:
-        "When Agents are sufficiently autonomous and intelligent, they can become the core of products. In some scenarios, watching Agents compete and cooperate is itself a strong user experience and business model. Making Agent decision logic public or competitive on-chain can achieve high-discreteness data verifiability, reduce oracle risk, and enable low-threshold, gasless user participation.",
+      title: t("tracksPage.tracks.track3.title"),
+      subtitle: t("tracksPage.tracks.track3.subtitle"),
+      description: t("tracksPage.tracks.track3.description"),
       problems: [
-        "How can Agent confrontation, competition and collaboration become application forms?",
-        "How to combine Agent behavior with prediction markets, betting or similar mechanisms?",
-        "In trustless third-party scenarios, how to ensure Agent behavior and outcome verifiability?",
-        "In crypto native environments, how can agents better complete transactions, decisions and collaboration?",
+        t("tracksPage.tracks.track3.problems.p1"),
+        t("tracksPage.tracks.track3.problems.p2"),
+        t("tracksPage.tracks.track3.problems.p3"),
+        t("tracksPage.tracks.track3.problems.p4"),
       ],
       builds: [
-        "Agent-vs-Agent games or simulation systems (Poker, Chess, MOBA, etc.)",
-        "Agent competition platforms deeply integrated with prediction markets",
-        "Short, high-frequency round simulation or competition environments (5-10 minutes)",
-        "Public or on-chain Agent decision logic achieving high-discreteness data verifiability, reducing oracle risk",
-        "Low-threshold, gasless user participation (like Arcade Tokens) for observation, interaction or betting goals",
+        t("tracksPage.tracks.track3.builds.b1"),
+        t("tracksPage.tracks.track3.builds.b2"),
+        t("tracksPage.tracks.track3.builds.b3"),
+        t("tracksPage.tracks.track3.builds.b4"),
+        t("tracksPage.tracks.track3.builds.b5"),
       ],
     },
   ]
@@ -69,11 +71,13 @@ export default function Tracks() {
           <div className={styles.container}>
             <div className={styles.header}>
               <h2 className={styles.title}>
-                Tracks
+                {t("tracksPage.title")}
                 <br />
-                <span className={styles.accent}>Which Directions Are Worth Exploring</span>
+                <span className={styles.accent}>
+                  {t("tracksPage.titleAccent")}
+                </span>
               </h2>
-              <p className={styles.subtitle}>Choose a track and build the future</p>
+              <p className={styles.subtitle}>{t("tracksPage.subtitle")}</p>
             </div>
 
             <div className={styles.tracksList}>
@@ -94,7 +98,9 @@ export default function Tracks() {
 
                     <div className={styles.trackSections}>
                       <div>
-                        <h4 className={styles.sectionTitle}>Problems this track aims to solve:</h4>
+                        <h4 className={styles.sectionTitle}>
+                          {t("tracksPage.sectionProblems")}
+                        </h4>
                         <ul className={styles.itemList}>
                           {track.problems.map((problem, idx) => (
                             <li key={idx} className={styles.listItem}>
@@ -106,7 +112,9 @@ export default function Tracks() {
                       </div>
 
                       <div>
-                        <h4 className={styles.sectionTitle}>What we hope to see built:</h4>
+                        <h4 className={styles.sectionTitle}>
+                          {t("tracksPage.sectionBuilds")}
+                        </h4>
                         <ul className={styles.itemList}>
                           {track.builds.map((build, idx) => (
                             <li key={idx} className={styles.listItem}>
