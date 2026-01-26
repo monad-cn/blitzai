@@ -190,7 +190,7 @@ export const Partner = () => {
                 autoFill
                 gradient={false}
                 pauseOnHover
-                speed={120}
+                speed={60}
                 play={!reduceMotion}
               >
                 {partnerLogos.map((item, index) =>
