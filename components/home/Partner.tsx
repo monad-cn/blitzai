@@ -14,66 +14,70 @@ export const Partner = () => {
     | { type: 'logo'; title: string; src: string; logoHeight?: string }
 
   const technologyPartners = [
-    { title: 'KIMI', src: '/home/logo/kimi.svg', logoHeight: '36px' },
-    { title: 'Zhipu', src: '/home/logo/zp.svg', logoHeight: '30px' },
-    { title: 'DouBao', src: '/home/logo/doubao.svg', logoHeight: '36px' },
-    { title: 'YouWare', src: '/home/logo/youware.svg', logoHeight: '36px' },
-    { title: 'StepFun', src: '/home/logo/jieyuexc.svg' },
-    { title: 'Rokid', src: '/home/logo/rokid.svg', logoHeight: '36px' },
+    { title: 'KIMI', src: '/home/logo/technology/kimi.png' },
+    { title: 'Zhipu', src: '/home/logo/technology/zhipu.png' ,logoHeight:'34px'},
+    { title: 'DouBao', src: '/home/logo/technology/doubao.png' },
+    { title: 'YouWare', src: '/home/logo/technology/youware.png' },
+    { title: 'StepFun', src: '/home/logo/technology/jieyuexc.png' ,logoHeight:'34px'},
+    { title: 'Rokid', src: '/home/logo/technology/rokid.png',logoHeight:'34px' },
     {
       title: 'SiliconFlow',
-      src: '/home/logo/siliconflow.svg',
-      logoHeight: '36px'
+      src: '/home/logo/technology/guijild.png',logoHeight:'36px'
     },
-    { title: 'OshwHub', src: '/home/logo/oshwhub.svg', logoHeight: '36px' }
+    { title: 'OshwHub', src: '/home/logo/technology/oshwhub.png' }
   ]
 
   const VC = [
     {
       title: 'Delphi Ventures',
-      src: '/home/logo/vc/delphi_ventures.svg',
+      src: '/home/logo/vc/delphi_ventures.png',
       logoHeight: '36px'
     },
-    { title: 'Vertext', src: '/home/logo/vc/vertext.svg', logoHeight: '36px' },
+    { title: 'Vertext', src: '/home/logo/vc/vertex.png', logoHeight: '36px' },
     {
       title: 'Archetype',
-      src: '/home/logo/vc/archetype.svg',
+      src: '/home/logo/vc/archetype.png',
       logoHeight: '36px'
     },
-    { title: 'Pantera', src: '/home/logo/vc/pantera.svg', logoHeight: '36px' },
+    { title: 'Pantera', src: '/home/logo/vc/pantera.png', logoHeight: '36px' },
     {
       title: 'CoinFund',
       src: '/home/logo/vc/coinfund.svg',
-      logoHeight: '30px'
+      logoHeight: '26px'
     },
 
     {
       title: 'EnlightCapital',
-      src: '/home/logo/vc/enlightcapital.svg',
+      src: '/home/logo/vc/enlightcapital.png',
       logoHeight: '36px'
     },
     {
       title: 'ZhiYuanCT',
-      src: '/home/logo/vc/zhiyuanct.svg',
+      src: '/home/logo/vc/zhiyuanct.png',
       logoHeight: '36px'
     }
     // { title: 'Miracleplus', src: '/home/logo/vc/miracleplus.svg' }
   ]
 
   const communitySupporters = [
-    { title: 'AIGC Open', src: '/home/logo/aigc_open.svg' },
-    { title: 'Bonjour', src: '/home/logo/bonjour.svg' },
-    { title: 'Datawhale', src: '/home/logo/datawhale.svg' },
-    { title: 'Epic', src: '/home/logo/epic.svg' },
-    { title: 'GuiXingRen', src: '/home/logo/guixingren.svg' },
-    { title: 'Hackathon Weekly', src: '/home/logo/hackathoonweekly.svg' },
-    { title: 'RTE', src: '/home/logo/rte.svg', logoHeight: '2rem' },
-    { title: 'KaiYuanShe', src: '/home/logo/kaiyuanshe.svg' },
-    { title: 'MoonBit', src: '/home/logo/moonbit.svg' },
-    { title: 'PyChina', src: '/home/logo/pychina.svg' },
-    { title: 'QingKe', src: '/home/logo/qingke.svg', logoHeight: '2rem' },
-    { title: 'Rust.cc', src: '/home/logo/rustcc.svg' },
-    { title: 'WaytoAGI', src: '/home/logo/waytoAGI.svg' }
+    { title: 'AIGC Open', src: '/home/logo/community/aigc.png' },
+    { title: 'Bonjour', src: '/home/logo/community/bonjour.png' ,logoHeight:'34px'},
+    { title: 'Codatta', src: '/home/logo/community/codatta.png' },
+    { title: 'Datawhale', src: '/home/logo/community/datawhale.png',logoHeight:'34px' },
+    { title: 'Epic', src: '/home/logo/community/epic.png' },
+    { title: 'Goplus', src: '/home/logo/community/goplus.png' },
+    { title: 'GuiXingRen', src: '/home/logo/community/guixingren.png' },
+    {
+      title: 'Hackathon Weekly',
+      src: '/home/logo/community/hackathon_weekly.png'
+    },
+    { title: 'RTE', src: '/home/logo/community/rte.png',logoHeight:'34px' },
+    { title: 'KaiYuanShe', src: '/home/logo/community/kaiyuanshe.png' },
+    { title: 'MoonBit', src: '/home/logo/community/moonbit.png' },
+    { title: 'PyChina', src: '/home/logo/community/pychina.png' },
+    { title: 'QingKe', src: '/home/logo/community/qingke.png',logoHeight:'34px' },
+    { title: 'Rust.cc', src: '/home/logo/community/rust.png' },
+    { title: 'WaytoAGI', src: '/home/logo/community/waytoagi.png',logoHeight:'34px' }
   ]
 
   const partnerLogos: PartnerItem[] = [
@@ -94,7 +98,11 @@ export const Partner = () => {
     }))
   ]
 
-  const renderPartnerItem = (item: PartnerItem, keySuffix: string) => {
+  const renderPartnerItem = (
+    item: PartnerItem,
+    keySuffix: string,
+    ariaHidden = false
+  ) => {
     if (item.type === 'label') {
       const [firstLine, ...rest] = item.text.split(' ')
       const secondLine = rest.join(' ')
@@ -102,6 +110,7 @@ export const Partner = () => {
         <span
           key={`${item.text}-${keySuffix}`}
           className={styles.partnerLogoLabel}
+          aria-hidden={ariaHidden || undefined}
         >
           <span className={styles.partnerLogoLabelLine}>{firstLine}</span>
           <span className={styles.partnerLogoLabelLine}>{secondLine}</span>
@@ -115,6 +124,7 @@ export const Partner = () => {
         width={180}
         height={60}
         className={styles.partnerLogoImage}
+        aria-hidden={ariaHidden || undefined}
         style={
           item.logoHeight
             ? ({ '--partner-logo-height': item.logoHeight } as CSSProperties)
@@ -142,6 +152,8 @@ export const Partner = () => {
     media.addListener(handleChange)
     return () => media.removeListener(handleChange)
   }, [])
+
+  const marqueeItems = [...partnerLogos, ...partnerLogos]
 
   return (
     <section className={styles.partner}>
@@ -187,14 +199,17 @@ export const Partner = () => {
             <div className={styles.partnerLogos}>
               <Marquee
                 className={styles.partnerMarquee}
-                autoFill
                 gradient={false}
                 pauseOnHover
                 speed={60}
                 play={!reduceMotion}
               >
-                {partnerLogos.map((item, index) =>
-                  renderPartnerItem(item, String(index))
+                {marqueeItems.map((item, index) =>
+                  renderPartnerItem(
+                    item,
+                    String(index),
+                    index >= partnerLogos.length
+                  )
                 )}
               </Marquee>
             </div>
