@@ -24,8 +24,8 @@ export const PartnerMobile = () => {
       key: 'host',
       label: t('partner.mobileLabels.host'),
       logos: [
-        { src: '/home/logo_mobile/openbuild.svg', alt: 'openbuild' },
-        { src: '/home/logo_mobile/monad.svg', alt: 'monad' }
+        { src: '/home/logo/openbuild_2.png', alt: 'openbuild', height: 24 },
+        { src: '/home/logo/monad.png', alt: 'monad', height: 24 }
       ]
     },
     {
@@ -33,14 +33,14 @@ export const PartnerMobile = () => {
       label: t('partner.mobileLabels.cohost'),
       logos: [
         {
-          src: '/home/logo_mobile/segmentfault.svg',
+          src: '/home/logo/segmentfault.png',
           alt: 'segmentfault',
-          padding: '10px 26px'
+          height: 22
         },
         {
-          src: '/home/logo_mobile/vibefriends.svg',
+          src: '/home/logo/vibefriends.png',
           alt: 'vibefriends',
-          padding: '12px 30px'
+          height: 26
         }
       ]
     },
@@ -49,41 +49,40 @@ export const PartnerMobile = () => {
       label: t('partner.mobileLabels.technologySupport'),
       logos: [
         {
-          src: '/home/logo_mobile/kimi.svg',
+          src: '/home/logo/technology/kimi.png',
           alt: 'kimi',
           padding: '10px 16px'
         },
         {
-          src: '/home/logo_mobile/zhipu.svg',
+          src: '/home/logo/technology/zhipu.png',
           alt: 'zhipu',
           padding: '10px 24px'
         },
         {
-          src: '/home/logo_mobile/doubao.svg',
+          src: '/home/logo/technology/doubao.png',
           alt: 'doubao',
           padding: '10px 16px'
         },
         {
-          src: '/home/logo_mobile/youware.svg',
+          src: '/home/logo/technology/youware.png',
           alt: 'youware',
           padding: '10px 14px'
         },
         {
-          src: '/home/logo_mobile/jieyuexc.svg',
+          src: '/home/logo/technology/jieyuexc.png',
           alt: 'jieyuexc',
           padding: '10px 12px'
         },
         {
-          src: '/home/logo_mobile/rokid.svg',
+          src: '/home/logo/technology/rokid.png',
           alt: 'rokid',
-          padding: '10px 20px'
+          height: 24
         },
         {
-          src: '/home/logo_mobile/guijild.svg',
-          alt: 'guijild',
-          padding: '10px 20px'
+          src: '/home/logo/technology/guijild.png',
+          alt: 'guijild'
         },
-        { src: '/home/logo_mobile/oshw.svg', alt: 'oshw', padding: '10px 20px' }
+        { src: '/home/logo/technology/oshwhub.png', alt: 'oshw' }
       ]
     },
     {
@@ -91,32 +90,33 @@ export const PartnerMobile = () => {
       label: t('partner.mobileLabels.vc'),
       logos: [
         {
-          src: '/home/logo_mobile/delphi.svg',
-          alt: 'delphi'
+          src: '/home/logo/vc/delphi_ventures.png',
+          alt: 'delphi',
+          height: 30
         },
         {
-          src: '/home/logo_mobile/vertex.svg',
+          src: '/home/logo/vc/vertex.png',
           alt: 'vertex'
         },
         {
-          src: '/home/logo_mobile/archetype.svg',
+          src: '/home/logo/vc/archetype.png',
           alt: 'archetype',
-          width: 30
+          height: 30
         },
         {
-          src: '/home/logo_mobile/pantera.svg',
+          src: '/home/logo/vc/pantera.png',
           alt: 'pantera'
         },
         {
-          src: '/home/logo_mobile/coinfund.svg',
+          src: '/home/logo/vc/coinfund.svg',
           alt: 'coinfund'
         },
         {
-          src: '/home/logo_mobile/enlight.svg',
+          src: '/home/logo/vc/enlightcapital.png',
           alt: 'enlight'
         },
         {
-          src: '/home/logo_mobile/zhiyuanct.svg',
+          src: '/home/logo/vc/zhiyuanct.png',
           alt: 'zhiyuanct'
         }
       ]
@@ -126,58 +126,63 @@ export const PartnerMobile = () => {
       label: t('partner.mobileLabels.communitySupport'),
       logos: [
         {
-          src: '/home/logo_mobile/aigc.svg',
-          alt: 'aigc'
+          src: '/home/logo/community/aigc.png',
+          alt: 'aigc',
+          height: 26
         },
         {
-          src: '/home/logo_mobile/bonjour.svg',
+          src: '/home/logo/community/bonjour.png',
           alt: 'bonjour'
         },
         {
-          src: '/home/logo_mobile/datawhale.svg',
+          src: '/home/logo/community/datawhale.png',
           alt: 'datawhale'
         },
         {
-          src: '/home/logo_mobile/epic.svg',
-          alt: 'epic'
+          src: '/home/logo/community/epic.png',
+          alt: 'epic',
+          height: 26
         },
         {
-          src: '/home/logo_mobile/guixingren.svg',
+          src: '/home/logo/community/guixingren.png',
           alt: 'guixingren',
-          width: 46
+          height: 30
         },
         {
-          src: '/home/logo_mobile/hack.svg',
+          src: '/home/logo/community/hackathon_weekly.png',
           alt: 'hack',
-          width: 70
+          height: 26
         },
         {
-          src: '/home/logo_mobile/rte.svg',
+          src: '/home/logo/community/rte.png',
           alt: 'rte'
         },
         {
-          src: '/home/logo_mobile/kaiyuanshe.svg',
-          alt: 'kaiyuanshe'
+          src: '/home/logo/community/kaiyuanshe.png',
+          alt: 'kaiyuanshe',
+          height: 26
         },
         {
-          src: '/home/logo_mobile/moonbit.svg',
+          src: '/home/logo/community/moonbit.png',
           alt: 'moonbit'
         },
         {
-          src: '/home/logo_mobile/pychina.svg',
-          alt: 'pychina'
+          src: '/home/logo/community/pychina.png',
+          alt: 'pychina',
+          height: 26
         },
         {
-          src: '/home/logo_mobile/qingke.svg',
+          src: '/home/logo/community/qingke.png',
           alt: 'qingke',
-          width: 70
+          height: 24
         },
         {
-          src: '/home/logo_mobile/rust.svg',
-          alt: 'rust'
+          src: '/home/logo/community/rust.png',
+          alt: 'rust',
+          height: 26
         },
         {
-          src: '/home/logo_mobile/wayto.svg',
+          src: '/home/logo/community/waytoagi.png',
           alt: 'wayto'
         }
       ]
@@ -187,9 +192,9 @@ export const PartnerMobile = () => {
       label: t('partner.mobileLabels.incubationSupport'),
       logos: [
         {
-          src: '/home/logo_mobile/openseed.svg',
+          src: '/home/logo/incubation/openseed.png',
           alt: 'openseed',
-          width:70
+          height: 24
         }
       ]
     }
