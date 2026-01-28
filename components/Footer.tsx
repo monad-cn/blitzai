@@ -16,7 +16,7 @@ export function Footer() {
     //   { label: t('footer.links.twitter'), href: 'https://x.com/monad' }
     // ],
     [t('footer.categories.event')]: [
-      { label: t('footer.links.agenda'), href: '/#agenda' },
+      // { label: t('footer.links.agenda'), href: '/#agenda' },
       { label: t('footer.links.tracks'), href: '/tracks' },
       { label: t('footer.links.prizes'), href: '/#prizes' },
       { label: t('footer.links.qa'), href: '/#q&a' }
