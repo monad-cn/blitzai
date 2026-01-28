@@ -1,6 +1,10 @@
 .main {
   min-height: 100vh;
-  background: white;
+  background-color: #0f0f0f;
+  background-image: url('/home/background/hero.png');
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
 }
 
 .content {
@@ -9,7 +13,6 @@
 
 .section {
   padding: clamp(3rem, 8vw, 4rem) 0 clamp(5rem, 10vw, 10rem);
-  background: white;
 }
 
 .container {
@@ -28,17 +31,18 @@
   font-size: clamp(2.25rem, 6vw, 3.5rem);
   font-weight: bold;
   line-height: 1.1;
-  color: black;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
 .accent {
-  color: #8b5cf6;
+  color: #a855f7;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
 }
 
 .subtitle {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
-  color: black;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .tracksList {
@@ -51,14 +55,17 @@
 
 .trackCard {
   padding: clamp(1.5rem, 4vw, 2.5rem);
-  background: white;
+  background: rgba(15, 10, 21, 0.6);
   border-radius: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.12);
   transition: all 0.3s;
 }
 
 .trackCard:hover {
-  border-color: rgba(139, 92, 246, 0.5);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 10px 35px rgba(168, 85, 247, 0.2);
 }
 
 .trackContent {
@@ -82,7 +89,7 @@
 .trackNumber {
   font-size: clamp(2.25rem, 6vw, 3.75rem);
   font-weight: bold;
-  color: #8b5cf6;
+  color: #a855f7;
 }
 
 .trackTitleWrapper {
@@ -92,18 +99,18 @@
 .trackTitle {
   font-size: clamp(1.5rem, 4vw, 1.875rem);
   font-weight: bold;
-  color: black;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .trackSubtitle {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
-  color: black;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 500;
 }
 
 .trackDescription {
-  color: black;
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
 }
 
@@ -115,7 +122,7 @@
 
 .sectionTitle {
   font-weight: bold;
-  color: black;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.75rem;
 }
 
@@ -129,14 +136,14 @@
 }
 
 .listItem {
-  color: black;
+  color: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
 }
 
 .bullet {
-  color: #8b5cf6;
+  color: #a855f7;
   margin-top: 0.25rem;
 }
 
