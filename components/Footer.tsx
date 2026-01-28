@@ -9,12 +9,12 @@ export function Footer() {
   const { t } = useTranslation()
 
   const footerLinks = {
-    [t('footer.categories.resources')]: [
-      { label: t('footer.links.documentation'), href: 'https://docs.monad.xyz' },
-      { label: t('footer.links.github'), href: '#' },
-      { label: t('footer.links.discord'), href: 'https://discord.com/invite/monad' },
-      { label: t('footer.links.twitter'), href: 'https://x.com/monad' }
-    ],
+    // [t('footer.categories.resources')]: [
+    //   { label: t('footer.links.documentation'), href: 'https://docs.monad.xyz' },
+    //   { label: t('footer.links.github'), href: '#' },
+    //   { label: t('footer.links.discord'), href: 'https://discord.com/invite/monad' },
+    //   { label: t('footer.links.twitter'), href: 'https://x.com/monad' }
+    // ],
     [t('footer.categories.event')]: [
       { label: t('footer.links.agenda'), href: '/#agenda' },
       { label: t('footer.links.tracks'), href: '/tracks' },

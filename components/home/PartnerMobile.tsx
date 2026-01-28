@@ -82,7 +82,14 @@ export const PartnerMobile = () => {
           src: '/home/logo/technology/guijild.png',
           alt: 'guijild'
         },
-        { src: '/home/logo/technology/oshwhub.png', alt: 'oshw' }
+        { src: '/home/logo/technology/oshwhub.png', alt: 'oshw' },
+        { src: '/home/logo/technology/qiniu.png', alt: '七牛云', height: 28 },
+        {
+          src: '/home/logo/technology/zilliz.png',
+          alt: 'zilliz',
+          height: 28,
+          padding: '10px 0'
+        }
       ]
     },
     {
@@ -131,16 +138,36 @@ export const PartnerMobile = () => {
           height: 26
         },
         {
+          src: '/home/logo/community/atom.png',
+          alt: 'atomGit AI',
+          height: 26
+        },
+        {
           src: '/home/logo/community/bonjour.png',
           alt: 'bonjour'
+        },
+        {
+          src: '/home/logo/community/codatta.png',
+          alt: 'Codatta',
+          height: 26
         },
         {
           src: '/home/logo/community/datawhale.png',
           alt: 'datawhale'
         },
         {
+          src: '/home/logo/community/echkit.png',
+          alt: 'echkit',
+          height: 20
+        },
+        {
           src: '/home/logo/community/epic.png',
           alt: 'epic',
+          height: 26
+        },
+        {
+          src: '/home/logo/community/goplus.png',
+          alt: 'goplus',
           height: 26
         },
         {
@@ -151,6 +178,11 @@ export const PartnerMobile = () => {
         {
           src: '/home/logo/community/hackathon_weekly.png',
           alt: 'hack',
+          height: 26
+        },
+        {
+          src: '/home/logo/community/ai_gf.png',
+          alt: '杭州AI工坊',
           height: 26
         },
         {
@@ -182,8 +214,70 @@ export const PartnerMobile = () => {
           height: 26
         },
         {
+          src: '/home/logo/community/shougongchuan.png',
+          alt: '手工川',
+          height: 26
+        },
+        {
+          src: '/home/logo/community/tegongyz.png',
+          alt: '特工宇宙',
+          height: 26
+        },
+        {
           src: '/home/logo/community/waytoagi.png',
           alt: 'wayto'
+        },
+        {
+          src: '/home/logo/community-uni/pku.png',
+          alt: 'pku',
+          height: 26
+        },
+        {
+          src: '/home/logo/community-uni/ujsbca.png',
+          alt: 'ujsbca'
+        },
+        {
+          src: '/home/logo/community-uni/thuba.png',
+          alt: 'thuba',
+          height: 26
+        },
+        {
+          src: '/home/logo/community-uni/fudan.png',
+          alt: 'fudan'
+        },
+        {
+          src: '/home/logo/community-uni/opencas.png',
+          alt: 'opencas'
+        },
+        {
+          src: '/home/logo/community-uni/wuhandx.png',
+          alt: 'wuhandx',
+          height: 26
+        },
+        {
+          src: '/home/logo/community-uni/zhejiangdx.png',
+          alt: 'zhejiangdx',
+          height: 26
+        },
+        {
+          src: '/home/logo/community-uni/qingdaodx.png',
+          alt: 'qingdaodx'
+        },
+        {
+          src: '/home/logo/community-uni/jilin.png',
+          alt: 'jilin'
+        },
+        {
+          src: '/home/logo/community-uni/cuitbca.png',
+          alt: 'cuitbca'
+        },
+        {
+          src: '/home/logo/community-uni/shenzhen.png',
+          alt: 'shenzhen'
+        },
+        {
+          src: '/home/logo/community-uni/0xu.png',
+          alt: '0xu'
         }
       ]
     },
