@@ -194,14 +194,14 @@
       "event": "活動"
     },
     "links": {
-      "documentation": "文件",
+      "documentation": "文檔",
       "github": "GitHub",
       "discord": "Discord",
       "twitter": "Twitter",
       "agenda": "日程",
       "tracks": "賽道",
       "prizes": "獎項",
-      "register": "報名"
+      "qa": "問答"
     },
     "copyright": "© 2026 Monad Blitz Pro. 保留所有權利。"
   }

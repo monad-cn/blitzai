@@ -12,14 +12,14 @@ export function Footer() {
     [t('footer.categories.resources')]: [
       { label: t('footer.links.documentation'), href: 'https://docs.monad.xyz' },
       { label: t('footer.links.github'), href: '#' },
-      { label: t('footer.links.discord'), href: '#' },
-      { label: t('footer.links.twitter'), href: '#' }
+      { label: t('footer.links.discord'), href: 'https://discord.com/invite/monad' },
+      { label: t('footer.links.twitter'), href: 'https://x.com/monad' }
     ],
     [t('footer.categories.event')]: [
       { label: t('footer.links.agenda'), href: '/#agenda' },
       { label: t('footer.links.tracks'), href: '/tracks' },
       { label: t('footer.links.prizes'), href: '/#prizes' },
-      { label: t('footer.links.register'), href: '/#register' }
+      { label: t('footer.links.qa'), href: '/#q&a' }
     ]
   }
 
@@ -48,13 +48,30 @@ export function Footer() {
                 {category.toUpperCase()}
               </h3>
               <ul className={styles.linkList}>
-                {items.map(link => (
-                  <li key={link.label}>
-                    <a href={link.href} className={styles.footerLink}>
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
+                {items.map(link => {
+                  const isExternal = link.href.startsWith('http')
+                  const isInternal = link.href.startsWith('/')
+
+                  return (
+                    <li key={link.label}>
+                      {isInternal ? (
+                        <Link href={link.href} className={styles.footerLink}>
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <a
+                          href={link.href}
+                          className={styles.footerLink}
+                          {...(isExternal
+                            ? { target: '_blank', rel: 'noreferrer' }
+                            : {})}
+                        >
+                          {link.label}
+                        </a>
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           ))}

@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className={styles.ctaSection}>
+      <section id="register" className={styles.ctaSection}>
         <div className={styles.gradient} />
         <div className={styles.dots} />
         <div className={styles.bottomLine} />
