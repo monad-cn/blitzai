@@ -68,14 +68,7 @@ export default function Home() {
       question: t('faq.items.q4'),
       answer: t('faq.items.a4')
     },
-    {
-      question: t('faq.items.q5'),
-      answer: t('faq.items.a5')
-    },
-    {
-      question: t('faq.items.q6'),
-      answer: t('faq.items.a6')
-    }
+    
   ]
 
   return (

@@ -33,7 +33,7 @@ export function Header() {
   const navItems = [
     { label: t('nav.home'), href: '/' },
     { label: t('nav.tracks'), href: '/tracks' },
-    { label: t('nav.agenda'), href: '/#agenda' },
+    // { label: t('nav.agenda'), href: '/#agenda' },
     { label: t('nav.prizes'), href: '/#prizes' },
     { label: t('nav.qa'), href: '/#q&a' }
   ]
