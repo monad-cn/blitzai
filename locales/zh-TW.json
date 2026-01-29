@@ -27,7 +27,7 @@
   },
   "about": {
     "title": "一切變量同時變化，唯有構建不變。",
-    "description": "當智能體成為執行主體、區塊鏈成為經濟底座時，哪些方向最值得探索？Rebel in Paradise 直面這個問題。",
+    "description": "當 Agent 成為真正的執行主體，哪些方向最值得被構建與探索？Rebel in Paradise 正面回應了這個問題。",
     "features": {
       "totalPrizeTitle": "總獎金 4 萬美元",
       "totalPrizeDescription": "獎金池包含 2 萬美元現金 + 2 萬美元創意與資源獎勵",
@@ -82,8 +82,8 @@
     "title": "賽道",
     "titleAccent": "哪些方向值得探索",
     "subtitle": "選擇賽道，構建未來",
-    "sectionProblems": "本賽道希望解決的問題：",
-    "sectionBuilds": "我們希望看到的構建：",
+    "sectionProblems": "本賽道希望解決的問題（可選之一）：",
+    "sectionBuilds": "我們希望看到的構建（可選之一）：",
     "tracks": {
       "track1": {
         "title": "賽道 1：原生智能體支付與基礎設施",

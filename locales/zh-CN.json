@@ -27,7 +27,7 @@
   },
   "about": {
     "title": "一切变量同时变化，唯有构建不变。",
-    "description": "当智能体成为执行主体、区块链成为经济底座时，哪些方向最值得探索？Rebel in Paradise 直面这个问题。",
+    "description": "当 Agent 不再只是对话工具，而是具备执行力的实体，哪些方向最值得开发者投入？Rebel in Paradise 给出了直接回应。",
     "features": {
       "totalPrizeTitle": "总奖金 4 万美元",
       "totalPrizeDescription": "奖金池包含 2 万美元现金 + 2 万美元创意与资源奖励",
@@ -82,8 +82,8 @@
     "title": "赛道",
     "titleAccent": "哪些方向值得探索",
     "subtitle": "选择赛道，构建未来",
-    "sectionProblems": "本赛道希望解决的问题：",
-    "sectionBuilds": "我们希望看到的构建：",
+    "sectionProblems": "本赛道希望解决的问题（可选之一）：",
+    "sectionBuilds": "我们希望看到的构建（可选之一）：",
     "tracks": {
       "track1": {
         "title": "赛道 1：原生智能体支付与基础设施",
